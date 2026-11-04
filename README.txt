@@ -1,13 +1,14 @@
-TFB 2011 Liga V2.1.0
+TFB 2011 Liga V2.2.0
 
-Fokus dieser Version: Überarbeitung der Startseite.
-- horizontales Scrollen entfernt
+Überarbeitete Layout-Version:
+- feste, kompakte Desktop-Navigation ohne Überlagerung
+- keine horizontale Seiten-Scrollleiste
 - kompakter Kopfbereich
-- kompakter Hero mit integriertem Vereinslogo
-- Saisonname und Jahr getrennt dargestellt
-- Kennzahlen und offene Spiele schneller sichtbar
-- eindeutiger Speicherstatus und Backup-Schaltfläche
-- Versions- und Backupstatus in der Seitenleiste
+- neu zugeschnittenes Arena-Artwork
+- Vereinslogo nur noch kontrolliert als Wappenkarte
+- Kennzahlen und Liga-Inhalte direkt im sichtbaren Bereich
+- mobile Navigation am unteren Bildschirmrand
+- bestehende Liga-Daten und Funktionen bleiben erhalten
 
-Start: index.html öffnen.
-Die Daten bleiben unter dem bisherigen lokalen Speicherschlüssel erhalten.
+Start: index.html öffnen oder den kompletten Ordner auf GitHub Pages hochladen.
+Wichtig: Für ein sauberes Update auf GitHub alle Dateien dieser Version ersetzen.
