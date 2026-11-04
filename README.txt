@@ -1,12 +1,10 @@
-TFB 2011 Liga V2.3.0
+TFB 2011 Liga V2.4.0
 
 Änderungen:
-- Desktop-Seitenleiste deutlich kompakter
-- separate Scrollleiste der Navigation entfernt
-- Demo-Schaltfläche entfernt
-- Regelkarte vollständig entfernt
-- Bereich offene Begegnungen wird nur angezeigt, wenn unbestätigte Spiele vorhanden sind
-- Link führt direkt zur Ergebniserfassung
-- bestehende Daten und Liga-Funktionen bleiben erhalten
+- linkes Menü per Schaltfläche ein- und ausblendbar
+- Zustand des Menüs wird lokal gespeichert
+- Screenshot-Darstellungen an Logo-Positionen durch das echte Vereinswappen ersetzt
+- Schaltfläche „Saison einrichten“ in „Neue Saison erstellen“ umbenannt
+- bisherige Liga-Funktionen und Daten bleiben erhalten
 
-Für GitHub Pages alle Dateien des bisherigen Stands vollständig ersetzen.
+Für GitHub Pages alle Dateien vollständig ersetzen.
