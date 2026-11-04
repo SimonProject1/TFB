@@ -1,10 +1,11 @@
-TFB 2011 Liga V2.4.0
+TFB 2011 Liga V2.5.0
 
-Änderungen:
-- linkes Menü per Schaltfläche ein- und ausblendbar
-- Zustand des Menüs wird lokal gespeichert
-- Screenshot-Darstellungen an Logo-Positionen durch das echte Vereinswappen ersetzt
-- Schaltfläche „Saison einrichten“ in „Neue Saison erstellen“ umbenannt
-- bisherige Liga-Funktionen und Daten bleiben erhalten
+Korrekturen:
+- Original-TFB-2011-Vereinslogo als echte Grafikdatei eingesetzt
+- Screenshot an der Logo-Position in der Sidebar entfernt
+- Screenshot an der Logo-Position im Hero entfernt
+- Menüschalter zeigt im geöffneten und geschlossenen Zustand drei Streifen
+- „Neue Saison erstellen“ bleibt erhalten
+- bestehende Liga-Daten und Funktionen bleiben erhalten
 
-Für GitHub Pages alle Dateien vollständig ersetzen.
+Für GitHub Pages alle Dateien vollständig ersetzen und danach Strg+F5 drücken.

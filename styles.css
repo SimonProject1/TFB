@@ -42,3 +42,9 @@ body.menu-collapsed .app{margin-left:0}
 /* Das Vereinswappen bleibt ein echtes Logo; kein Screenshot als Pseudo-Logo. */
 .brand img,.crest img{content:url("assets/vereinslogo.png")!important;object-fit:contain!important;object-position:center!important}
 @media(max-width:760px){.menu-toggle{display:none}.sidebar{transform:none!important}.app{margin-left:0!important}}
+
+
+/* V2.5.0: Originalwappen und einheitlicher Menüschalter */
+.menu-toggle{font-family:Arial,sans-serif;line-height:1}
+.brand img,.crest img{content:normal!important;background:#191a1d!important}
+.crest img{padding:10px!important}
