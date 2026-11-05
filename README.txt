@@ -1,11 +1,12 @@
-TFB 2011 Liga V3.0.0
+TFB 2011 Liga V3.1.0
 
-Kompletter Neuaufbau mit vier Bereichen:
-- Startseite
-- Spieler und Statistiken
-- Aktive Saison
-- Abgeschlossene Saisons
+Spieler-Seite überarbeitet:
+- Spielerliste dauerhaft untereinander in einer linken Spalte
+- ausgewählte Spielerkarte rechts daneben
+- Hinzufügen-Schaltfläche direkt über der Spielerliste
+- ausgewählter Spieler bleibt rot markiert
+- lange Spielerlisten scrollen nur innerhalb der linken Spalte
+- Smartphone-Ansicht ordnet Liste und Profil untereinander an
+- alle bisherigen Funktionen und lokalen Daten bleiben erhalten
 
-Passwort für Saisonstart, bestätigte Spiele löschen und Saisonabschluss: 3140
-
-Die App speichert lokal im Browser. Für GitHub Pages den kompletten Ordnerinhalt hochladen.
+Für GitHub Pages alle bisherigen Dateien durch diese Version ersetzen.
