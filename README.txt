@@ -1,13 +1,13 @@
-TFB 2011 Liga V2.6.0
+TFB 2011 Liga V2.7.0
 
-Saison-Seite überarbeitet:
-- Auswahl Hinrunde/Hin- und Rückrunde entfernt
-- veränderbare Punkte pro Sieg entfernt
-- 3 Punkte pro Sieg fest im System hinterlegt
-- kein automatischer Spielplan mehr
-- neue Saison startet mit leerer Begegnungsliste
-- bestehende Spieler bleiben beim Saisonwechsel erhalten
-- Saisonname und Saisonjahr bleiben frei einstellbar
-- Original-TFB-2011-Vereinslogo bleibt enthalten
+Korrektur der Saisonverwaltung:
+- aktive Saison wird auf der Saison-Seite sichtbar angezeigt
+- Saisonname, Jahr, Erstellungsdatum, Spieler und Begegnungen sichtbar
+- nach dem Erstellen bleibt die App auf der Saison-Seite
+- deutliche Erfolgsmeldung nach dem Erstellen
+- Schaltfläche heißt „Neue Saison beginnen“
+- bestehende Spieler bleiben erhalten
+- Begegnungen und Ergebnisse werden nach Bestätigung geleert
+- 3 Punkte pro Sieg bleiben fest hinterlegt
 
-Für GitHub Pages alle Dateien vollständig ersetzen und Strg+F5 drücken.
+Für GitHub Pages alle Dateien ersetzen und anschließend Strg+F5 drücken.
