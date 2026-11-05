@@ -1,13 +1,12 @@
-TFB 2011 Liga V2.7.0
+TFB 2011 Liga V2.8.0
 
-Korrektur der Saisonverwaltung:
-- aktive Saison wird auf der Saison-Seite sichtbar angezeigt
-- Saisonname, Jahr, Erstellungsdatum, Spieler und Begegnungen sichtbar
-- nach dem Erstellen bleibt die App auf der Saison-Seite
-- deutliche Erfolgsmeldung nach dem Erstellen
-- Schaltfläche heißt „Neue Saison beginnen“
-- bestehende Spieler bleiben erhalten
-- Begegnungen und Ergebnisse werden nach Bestätigung geleert
-- 3 Punkte pro Sieg bleiben fest hinterlegt
+Korrektur Saison-Seite:
+- neue Dateinamen für CSS und JavaScript verhindern alte GitHub-Pages-Cachestände
+- Vereinslogo in der aktiven Saison fest auf 72 x 72 Pixel begrenzt
+- Vereinslogo in der Navigation fest auf 48 x 48 Pixel begrenzt
+- zusätzliche kritische Layoutregeln direkt in der HTML-Datei
+- aktive Saison wieder als kompakte Karte dargestellt
+- Status, Saisonname, Jahr, Erstellungsdatum und Kennzahlen bleiben sichtbar
+- responsive Darstellung für Desktop und Smartphone
 
-Für GitHub Pages alle Dateien ersetzen und anschließend Strg+F5 drücken.
+Für GitHub Pages alle Dateien vollständig ersetzen. Alte styles.css und app.js dürfen entfernt werden.
