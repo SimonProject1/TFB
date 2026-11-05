@@ -1,13 +1,12 @@
-TFB 2011 Liga V3.2.0
+TFB 2011 Liga V3.3.0
 
-Aktive Saison überarbeitet:
-- Begegnungen dauerhaft in der linken Spalte
-- Tabelle dauerhaft in der rechten Spalte
-- kompakter Saisonkopf
-- Neues-Spiel-Schaltfläche im Kopf des Begegnungsbereichs
-- eigene Scrollfläche für viele Begegnungen
-- Tabelle bleibt am Desktop beim Scrollen sichtbar
-- auf kleineren Bildschirmen werden Begegnungen und Tabelle sauber untereinander angeordnet
-- alle bisherigen Funktionen, Daten und Passwortabfragen bleiben erhalten
-
-Für GitHub Pages alle Dateien durch diese Version ersetzen.
+Cleane aktive Saison:
+- keine innere vertikale Scrollleiste bei Begegnungen
+- keine horizontale Tabellen-Scrollleiste auf Desktop
+- große Kartenrahmen reduziert
+- Tabelle auf Platz, Spieler, Spiele, Punkte und Durchschnitt verdichtet
+- Tabellenführer dezent markiert
+- Begegnungskarten flacher gestaltet
+- Löschaktion optisch als Drei-Punkte-Menü dargestellt
+- Begegnungen links und Tabelle rechts
+- Original-Vereinslogo und beide Artworks enthalten
