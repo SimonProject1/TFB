@@ -1,11 +1,12 @@
-TFB 2011 Liga V4.7.0
+TFB 2011 Liga V4.8.0
 
-Tabellenkorrektur:
-- Spieler-Spalte auf exakt 15 Prozent reduziert.
-- Die acht Wertespalten erhalten zusammen 81 Prozent der Tabellenbreite.
-- Exakte Spaltenbreiten über colgroup statt fehleranfälliger nth-child-Regeln.
-- Keine horizontale Scrollleiste, auch nicht unter 1050 Pixel.
-- Werte und Überschriften werden nicht abgeschnitten oder mit Auslassungspunkten dargestellt.
-- Responsive Schrift- und Innenabstände für kleinere Fenster.
-- Gesamt, Einzel und Doppel bleiben klar gruppiert.
-- Bestehende Daten und Funktionen bleiben kompatibel.
+Premium-Tabellendesign:
+- redundanten LIVE/Tabelle-Grossbereich durch kompakte 40-Pixel-Statusleiste ersetzt
+- Tabellenkopf auf insgesamt 74 Pixel reduziert
+- Gesamt, Einzel und Doppel als eigene metallische Segmente gestaltet
+- Tabellenfuehrer mit goldenem Platzchip und schmalem Goldakzent
+- keine vollflaechig rote Fuehrungszeile mehr
+- wechselnde Gunmetal-Zeilen und Hover-Hervorhebung
+- Gesamtpunkte rot, Durchschnitt silbern, Detailwerte dezent
+- keine horizontale Scrollleiste
+- bestehende Daten und Funktionen bleiben kompatibel
