@@ -1,13 +1,12 @@
-TFB 2011 Liga V4.4.0
+TFB 2011 Liga V4.5.0
 
 Änderungen:
-- Aktive Saison besitzt oben zwei metallische Umschaltflächen: Spiele und Tabelle.
-- Es wird immer nur eine Ansicht über die volle Breite angezeigt.
-- Spiele ist beim ersten Öffnen die Standardansicht.
-- Die zuletzt gewählte Ansicht bleibt während der Browsersitzung erhalten.
-- Begegnungen erhalten die volle Breite, sodass Namen, Ergebniswahl und Bestätigen nicht abgeschnitten werden.
-- Die Tabelle erhält ebenfalls die volle Breite.
-- Kompakte Spielzeilen und einklappbare Gruppen aus V4.3.0 bleiben erhalten.
-
-Installation:
-ZIP-Inhalt vollständig in das bestehende Projekt kopieren und vorhandene Dateien ersetzen.
+- Saisonname, Saisonmetadaten, Spiele/Tabelle und Saison abschließen in einer kompakten Werkzeugleiste.
+- Tabelle zeigt zuerst die Gesamtwertung: Spiele, Siege/Niederlagen, Punkte und Durchschnitt.
+- Danach folgen Einzel: Siege/Niederlagen und Punkte.
+- Danach folgen Doppel: Siege/Niederlagen und Punkte.
+- Einzel- und Doppelpunkte basieren auf dem bestehenden System mit 3 Punkten je Sieg.
+- Zweizeiliger, gruppierter Tabellenkopf.
+- Tabellenkopf sowie Platz und Spieler bleiben beim Scrollen sichtbar.
+- Mobile Ansicht kann horizontal gescrollt werden.
+- Bestehende Liga-, Spieler-, Saison-, Backup- und Medaillendaten bleiben kompatibel.
