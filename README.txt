@@ -1,12 +1,11 @@
-TFB 2011 Liga V3.3.0
+TFB 2011 Liga V3.4.0
 
-Cleane aktive Saison:
-- keine innere vertikale Scrollleiste bei Begegnungen
-- keine horizontale Tabellen-Scrollleiste auf Desktop
-- große Kartenrahmen reduziert
-- Tabelle auf Platz, Spieler, Spiele, Punkte und Durchschnitt verdichtet
-- Tabellenführer dezent markiert
-- Begegnungskarten flacher gestaltet
-- Löschaktion optisch als Drei-Punkte-Menü dargestellt
-- Begegnungen links und Tabelle rechts
-- Original-Vereinslogo und beide Artworks enthalten
+Neue Einstellungsseite:
+- Backup mit Datum und Uhrzeit exportieren
+- Backup-Datei prüfen und importieren
+- automatisches Sicherheitsbackup vor Import und Löschaktionen
+- Systeminformationen anzeigen
+- alle Saisons löschen, Spieler behalten
+- alle Daten vollständig zurücksetzen
+- Passwort 3140 und Bestätigungswort LÖSCHEN für Löschaktionen
+- Backup-Schaltfläche aus der Kopfzeile entfernt
