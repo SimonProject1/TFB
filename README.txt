@@ -1,12 +1,10 @@
-TFB 2011 Liga V4.8.0
+TFB 2011 Liga V4.9.0
 
-Premium-Tabellendesign:
-- redundanten LIVE/Tabelle-Grossbereich durch kompakte 40-Pixel-Statusleiste ersetzt
-- Tabellenkopf auf insgesamt 74 Pixel reduziert
-- Gesamt, Einzel und Doppel als eigene metallische Segmente gestaltet
-- Tabellenfuehrer mit goldenem Platzchip und schmalem Goldakzent
-- keine vollflaechig rote Fuehrungszeile mehr
-- wechselnde Gunmetal-Zeilen und Hover-Hervorhebung
-- Gesamtpunkte rot, Durchschnitt silbern, Detailwerte dezent
-- keine horizontale Scrollleiste
+Tabellen-Feinschliff:
+- harte Kante zwischen Spielerbereich und Statistikbereich entfernt
+- 46 Pixel breiter weicher Gunmetal-Verlauf im Tabellenkopf und normalen Zeilen
+- 58 Pixel breiter Bronze-Gunmetal-Verlauf beim Tabellenfuehrer
+- roter Gesamt-Akzent laeuft weich ein
+- Hover-Zustaende besitzen passende weiche Uebergaenge
+- Trennlinien zwischen Gesamt, Einzel und Doppel bleiben erhalten
 - bestehende Daten und Funktionen bleiben kompatibel
