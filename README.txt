@@ -1,10 +1,11 @@
-TFB 2011 Liga V4.6.0
+TFB 2011 Liga V4.7.0
 
-Korrektur der erweiterten Tabelle:
-- feste prozentuale Spaltenbreiten
-- Spieler-Spalte auf 20 Prozent begrenzt
-- Gesamt, Einzel und Doppel ohne Textueberlagerungen
-- keine horizontale Scrollleiste auf breiten Desktop-Bildschirmen
-- horizontales Scrollen erst unter 1050 Pixel Inhaltsbreite
-- kompakte Zeilenhoehe von 58 Pixel
-- bestehende Daten und Funktionen bleiben kompatibel
+Tabellenkorrektur:
+- Spieler-Spalte auf exakt 15 Prozent reduziert.
+- Die acht Wertespalten erhalten zusammen 81 Prozent der Tabellenbreite.
+- Exakte Spaltenbreiten über colgroup statt fehleranfälliger nth-child-Regeln.
+- Keine horizontale Scrollleiste, auch nicht unter 1050 Pixel.
+- Werte und Überschriften werden nicht abgeschnitten oder mit Auslassungspunkten dargestellt.
+- Responsive Schrift- und Innenabstände für kleinere Fenster.
+- Gesamt, Einzel und Doppel bleiben klar gruppiert.
+- Bestehende Daten und Funktionen bleiben kompatibel.
