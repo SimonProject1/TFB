@@ -1,11 +1,13 @@
-TFB 2011 Liga V2.5.0
+TFB 2011 Liga V2.6.0
 
-Korrekturen:
-- Original-TFB-2011-Vereinslogo als echte Grafikdatei eingesetzt
-- Screenshot an der Logo-Position in der Sidebar entfernt
-- Screenshot an der Logo-Position im Hero entfernt
-- Menüschalter zeigt im geöffneten und geschlossenen Zustand drei Streifen
-- „Neue Saison erstellen“ bleibt erhalten
-- bestehende Liga-Daten und Funktionen bleiben erhalten
+Saison-Seite überarbeitet:
+- Auswahl Hinrunde/Hin- und Rückrunde entfernt
+- veränderbare Punkte pro Sieg entfernt
+- 3 Punkte pro Sieg fest im System hinterlegt
+- kein automatischer Spielplan mehr
+- neue Saison startet mit leerer Begegnungsliste
+- bestehende Spieler bleiben beim Saisonwechsel erhalten
+- Saisonname und Saisonjahr bleiben frei einstellbar
+- Original-TFB-2011-Vereinslogo bleibt enthalten
 
-Für GitHub Pages alle Dateien vollständig ersetzen und danach Strg+F5 drücken.
+Für GitHub Pages alle Dateien vollständig ersetzen und Strg+F5 drücken.

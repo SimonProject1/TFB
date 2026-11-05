@@ -48,3 +48,8 @@ body.menu-collapsed .app{margin-left:0}
 .menu-toggle{font-family:Arial,sans-serif;line-height:1}
 .brand img,.crest img{content:normal!important;background:#191a1d!important}
 .crest img{padding:10px!important}
+
+
+/* V2.6.0: einfache, flexible Saisonanlage */
+.season-form{max-width:980px}.season-note{display:flex;align-items:flex-start;gap:12px;padding:16px 18px;border:1px solid #3a3d45;border-radius:10px;background:#111318}.season-note b{color:#fff;white-space:nowrap}.season-note span{color:var(--muted);font-weight:500}.season-form .primary{min-height:58px}
+@media(max-width:760px){.season-note{flex-direction:column;gap:5px}.season-note b{white-space:normal}}
