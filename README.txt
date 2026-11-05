@@ -1,12 +1,13 @@
-TFB 2011 Liga V3.1.0
+TFB 2011 Liga V3.2.0
 
-Spieler-Seite überarbeitet:
-- Spielerliste dauerhaft untereinander in einer linken Spalte
-- ausgewählte Spielerkarte rechts daneben
-- Hinzufügen-Schaltfläche direkt über der Spielerliste
-- ausgewählter Spieler bleibt rot markiert
-- lange Spielerlisten scrollen nur innerhalb der linken Spalte
-- Smartphone-Ansicht ordnet Liste und Profil untereinander an
-- alle bisherigen Funktionen und lokalen Daten bleiben erhalten
+Aktive Saison überarbeitet:
+- Begegnungen dauerhaft in der linken Spalte
+- Tabelle dauerhaft in der rechten Spalte
+- kompakter Saisonkopf
+- Neues-Spiel-Schaltfläche im Kopf des Begegnungsbereichs
+- eigene Scrollfläche für viele Begegnungen
+- Tabelle bleibt am Desktop beim Scrollen sichtbar
+- auf kleineren Bildschirmen werden Begegnungen und Tabelle sauber untereinander angeordnet
+- alle bisherigen Funktionen, Daten und Passwortabfragen bleiben erhalten
 
-Für GitHub Pages alle bisherigen Dateien durch diese Version ersetzen.
+Für GitHub Pages alle Dateien durch diese Version ersetzen.
