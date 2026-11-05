@@ -1,10 +1,5 @@
-TFB 2011 Liga V4.9.0
+TFB 2011 Liga V5.0.0
 
-Tabellen-Feinschliff:
-- harte Kante zwischen Spielerbereich und Statistikbereich entfernt
-- 46 Pixel breiter weicher Gunmetal-Verlauf im Tabellenkopf und normalen Zeilen
-- 58 Pixel breiter Bronze-Gunmetal-Verlauf beim Tabellenfuehrer
-- roter Gesamt-Akzent laeuft weich ein
-- Hover-Zustaende besitzen passende weiche Uebergaenge
-- Trennlinien zwischen Gesamt, Einzel und Doppel bleiben erhalten
-- bestehende Daten und Funktionen bleiben kompatibel
+Qualitätsupdate mit neu aufgebauter Tabelle, Podiums-Chips, gedämpften Nullwerten, farbiger S/N-Darstellung, Tooltips, kompakter Saisonleiste, ruhigerem Metall-Design, gültiger Ergebnisauswahl, Dublettenprüfung für offene Spiele, automatischen Wiederherstellungspunkten, Rückgängig nach Spiel-Löschung, Backup-Validierung, zentraler Versionsnummer, Fokusrahmen und vereinheitlichten Animationen.
+
+Paketbereinigung: nur app-v5.0.js und styles-v5.0.css werden ausgeliefert.
