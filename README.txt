@@ -1,12 +1,10 @@
-TFB 2011 Liga V4.5.0
+TFB 2011 Liga V4.6.0
 
-Änderungen:
-- Saisonname, Saisonmetadaten, Spiele/Tabelle und Saison abschließen in einer kompakten Werkzeugleiste.
-- Tabelle zeigt zuerst die Gesamtwertung: Spiele, Siege/Niederlagen, Punkte und Durchschnitt.
-- Danach folgen Einzel: Siege/Niederlagen und Punkte.
-- Danach folgen Doppel: Siege/Niederlagen und Punkte.
-- Einzel- und Doppelpunkte basieren auf dem bestehenden System mit 3 Punkten je Sieg.
-- Zweizeiliger, gruppierter Tabellenkopf.
-- Tabellenkopf sowie Platz und Spieler bleiben beim Scrollen sichtbar.
-- Mobile Ansicht kann horizontal gescrollt werden.
-- Bestehende Liga-, Spieler-, Saison-, Backup- und Medaillendaten bleiben kompatibel.
+Korrektur der erweiterten Tabelle:
+- feste prozentuale Spaltenbreiten
+- Spieler-Spalte auf 20 Prozent begrenzt
+- Gesamt, Einzel und Doppel ohne Textueberlagerungen
+- keine horizontale Scrollleiste auf breiten Desktop-Bildschirmen
+- horizontales Scrollen erst unter 1050 Pixel Inhaltsbreite
+- kompakte Zeilenhoehe von 58 Pixel
+- bestehende Daten und Funktionen bleiben kompatibel
