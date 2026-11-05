@@ -1,7 +1,13 @@
-TFB 2011 Liga V3.8.0
+TFB 2011 Liga V3.9.0
 
-Vollstaendiges Medaillen-Update mit 19 individuellen Artworks.
-5 Bronze, 5 Silber, 5 Gold und 4 Platin.
-Bestehende Liga- und Backup-Daten bleiben kompatibel.
+Änderungen:
+- Spieler können in „Spieler bearbeiten“ dauerhaft gelöscht werden.
+- Zugehörige Begegnungen werden beim Löschen konsistent entfernt.
+- Neue korrigierte 100er-Club-Medaille.
+- Die Seitenleiste ist auf Desktop kompakter und schmaler.
+- Nicht freigeschaltete Medaillen bleiben vollständig geheim.
+- Angezeigt werden nur verdiente Medaillen und der Zähler „x / 19“.
+- „Alle Daten löschen“ bleibt ausschließlich in den Einstellungen.
 
-Installation: Inhalt in das bestehende Projekt kopieren und vorhandene Dateien ersetzen. Bestehende allgemeine Assets nicht loeschen.
+Installation:
+Den ZIP-Inhalt in das bestehende Projekt kopieren und vorhandene Dateien ersetzen. Allgemeine Assets wie vereinslogo.png, arena.jpg und stats.jpg nicht löschen.
