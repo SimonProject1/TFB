@@ -1,14 +1,13 @@
-TFB 2011 Liga V4.1.0
+TFB 2011 Liga V4.2.0
 
 Änderungen:
-- komplettes UI in Gunmetal-, Stahl- und roter Emaille-Optik
-- Kopfbereich auf 58 Pixel gekürzt; redundante Beschreibung entfernt
-- Startseiten-Hero deutlich flacher und Text auf „Deine Liga. Dein Spiel.“ gekürzt
-- Spielerfeld heißt „Spielername“ und erlaubt Namen oder Spitznamen
-- Dublettenprüfung ignoriert Groß-/Kleinschreibung und überflüssige Leerzeichen
-- Spielernamen sind nach dem Anlegen nicht mehr änderbar
-- Eingabegrenze 2 bis 30 Zeichen
-- bestehende Daten, geheime Medaillen, Navigation-Artworks und Funktionen bleiben kompatibel
+- Begegnungskarten zeigen ausschließlich das Anlegedatum im Format TT.MM.JJJJ.
+- Kein erklärender Text und keine Uhrzeit.
+- Das Anlegedatum bleibt auch bei bestätigten Begegnungen unverändert.
+- Seitenkopf auf 42 Pixel reduziert.
+- Startseiten-Hero nochmals deutlich flacher.
+- Vier Statistikfelder auf breiten Desktop-Bildschirmen in einer Reihe.
+- Metallisches Design, Spielerverwaltung, geheime Medaillen und alle bisherigen Funktionen bleiben erhalten.
 
 Installation:
-ZIP-Inhalt vollständig in das bestehende Projekt kopieren und vorhandene Dateien ersetzen. Allgemeine Assets im Projekt beibehalten.
+ZIP-Inhalt vollständig in das bestehende Projekt kopieren und vorhandene Dateien ersetzen.
