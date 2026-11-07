@@ -1,3 +1,3 @@
-TFB 2011 Liga V5.7.0
+TFB 2011 Liga V5.7.1
 
-Herausforderungs-Warteliste für Einzel und Doppel. Nach Ergebnisbestätigung kann Gewinner, Verlierer oder ein individuelles Team gegen die Herausforderer antreten. Ein Spielerwechsel im Doppel ist über die individuelle Teamzusammenstellung möglich.
+Bugfix: Herausforderungen werden per unveränderlicher Zustandsaktualisierung gespeichert, unmittelbar im localStorage verifiziert und danach neu gerendert. Cache-Busting für app.js und styles.css ergänzt.
