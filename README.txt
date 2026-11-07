@@ -1,3 +1,3 @@
-TFB 2011 Liga V5.6.0
+TFB 2011 Liga V5.6.1
 
-Sieben individuelle Metall-Artworks für Spielerränge mit dynamisch erzeugten Initialen. Einsatz weiterhin nur in Spielerliste und Spielerprofil.
+Bugfix für alle Dialoge: Erfolgreiche Aktionen schließen das Pop-up jetzt vor Speicherung und Neurendering. Formular-Submits werden abgefangen, Aktionsbuttons sind explizit type=button und alle Dialogschließungen sind abgesichert.
