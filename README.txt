@@ -1,3 +1,3 @@
-TFB 2011 Liga V5.5.0
+TFB 2011 Liga V5.6.0
 
-Testversion des saisonübergreifenden Spielerrangs in der Spielerdatenbank. Rangdesign erscheint ausschließlich an den Avataren der Spielerliste und des Spielerprofils.
+Sieben individuelle Metall-Artworks für Spielerränge mit dynamisch erzeugten Initialen. Einsatz weiterhin nur in Spielerliste und Spielerprofil.
