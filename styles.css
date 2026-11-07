@@ -12,3 +12,6 @@
 
 /* V5.7.5 clean challenge rebuild */
 .challenge-notice{grid-column:1/-1;padding:8px 10px;border-radius:10px;background:#fff3cd;color:#5f4300}.challenge-btn{grid-column:1/-1}.switch-line{display:flex!important;align-items:center;gap:10px;margin:12px 0}.switch-line input{width:auto}.stay-options{display:grid;gap:10px}.stay-options button{min-height:48px}#challengeDialog .primary,#challengeDialog .danger-outline,#followTeamChange .primary,#followTeamChange .light{width:100%;margin-top:8px}
+
+/* V5.7.6 verified challenge flow */
+.challenge-chip{grid-column:1/-1;width:100%;padding:10px 12px;border:1px solid #d8a82e;border-radius:10px;background:linear-gradient(180deg,#fff4c7,#e6c55d);color:#291d00;text-align:left;font-weight:800}.challenge-chip:hover{filter:brightness(1.05)}.team-choice{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:12px 0}.team-choice button{min-height:52px}.next-preview{padding:12px;border:1px solid var(--line);border-radius:10px;background:#101317;margin:12px 0}#swapFields{margin-top:10px}#followTeamChange>.ghost{width:100%;margin-top:10px}@media(max-width:600px){.team-choice{grid-template-columns:1fr}}

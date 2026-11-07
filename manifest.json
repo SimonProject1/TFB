@@ -1,0 +1,9 @@
+{
+  "name": "TFB 2011 Liga",
+  "short_name": "TFB Liga",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#080a0c",
+  "theme_color": "#d21f32",
+  "icons": []
+}

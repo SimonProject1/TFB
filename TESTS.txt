@@ -1,0 +1,8 @@
+Automatisch geprüft:
+1. JavaScript-Syntax
+2. Alle statischen JS-ID-Referenzen existieren im HTML
+3. Keine doppelten Challenge-Funktionsdefinitionen
+4. Einzel: Sieger/Verlierer/ohne Herausforderung
+5. Doppel: Sieger/Verlierer, unverändert, ein Wechsel
+6. Herausforderer-Anzeige ersetzt den Herausfordern-Button
+7. ZIP-Integrität
