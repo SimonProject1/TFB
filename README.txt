@@ -1,3 +1,3 @@
-TFB 2011 Liga V5.6.1
+TFB 2011 Liga V5.7.0
 
-Bugfix für alle Dialoge: Erfolgreiche Aktionen schließen das Pop-up jetzt vor Speicherung und Neurendering. Formular-Submits werden abgefangen, Aktionsbuttons sind explizit type=button und alle Dialogschließungen sind abgesichert.
+Herausforderungs-Warteliste für Einzel und Doppel. Nach Ergebnisbestätigung kann Gewinner, Verlierer oder ein individuelles Team gegen die Herausforderer antreten. Ein Spielerwechsel im Doppel ist über die individuelle Teamzusammenstellung möglich.
