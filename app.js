@@ -1,4 +1,4 @@
-const PASS='3140', KEY='tfb2011-liga-v3', APP_VERSION='5.9.0', RESTORE_KEY='tfb2011-restore-point';
+const PASS='3140', KEY='tfb2011-liga-v3', APP_VERSION='5.9.1', RESTORE_KEY='tfb2011-restore-point';
 const base={players:[],active:null,archive:[],legacyStats:{}};let D=load(),selectedPlayer=null,mode='single',pendingAction=null;D.players.forEach(p=>{if(p.active===undefined)p.active=true});
 const $=q=>document.querySelector(q),$$=q=>[...document.querySelectorAll(q)];function norm(s){return String(s||'').toLocaleLowerCase('de-DE').normalize('NFD').replace(/[\u0300-\u036f]/g,'')}function filterOptions(input,root,selector){const q=norm(input.value);$$(root+' '+selector).forEach(sel=>[...sel.options].forEach(o=>o.hidden=!!(q&&!norm(o.textContent).includes(q))))}function filterCards(input){const q=norm(input.value);$$('#playerCards .player-card').forEach(x=>x.hidden=!!(q&&!norm(x.textContent).includes(q)))}
 function uid(){return crypto.randomUUID()}function load(){try{return {...base,...JSON.parse(localStorage.getItem(KEY)||'{}')}}catch{return structuredClone(base)}}function save(){localStorage.setItem(KEY,JSON.stringify(D));render()}
