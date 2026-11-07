@@ -1,3 +1,3 @@
-TFB 2011 Liga V5.2.1
+TFB 2011 Liga V5.5.0
 
-Bugfix: Spielernamen in den nativen Auswahl-Dropdowns werden auf hellem Hintergrund dunkel und lesbar dargestellt. Das geschlossene Auswahlfeld bleibt im dunklen Metalldesign.
+Testversion des saisonübergreifenden Spielerrangs in der Spielerdatenbank. Rangdesign erscheint ausschließlich an den Avataren der Spielerliste und des Spielerprofils.
