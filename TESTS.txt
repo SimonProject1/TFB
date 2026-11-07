@@ -1,8 +1,9 @@
-Automatisch geprüft:
-1. JavaScript-Syntax
-2. Alle statischen JS-ID-Referenzen existieren im HTML
-3. Keine doppelten Challenge-Funktionsdefinitionen
-4. Einzel: Sieger/Verlierer/ohne Herausforderung
-5. Doppel: Sieger/Verlierer, unverändert, ein Wechsel
-6. Herausforderer-Anzeige ersetzt den Herausfordern-Button
-7. ZIP-Integrität
+Prüfungen V5.8.0:
+- Syntax und statische IDs
+- Button Herausfordern neben Bestätigen
+- Staffel hinzufügen, entfernen, hoch/runter
+- Einzel Sieger/Verlierer/ohne Weiterspiel
+- Doppel Sieger/Verlierer, gleiches Team, ein Wechsel
+- Staffelübergabe an automatisch erzeugtes Folgespiel
+- Parken und Übernahme bei manuell eingetragenem Spiel
+- ZIP-Integrität
