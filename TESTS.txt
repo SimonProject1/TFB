@@ -1,9 +1,1 @@
-Prüfungen V5.8.0:
-- Syntax und statische IDs
-- Button Herausfordern neben Bestätigen
-- Staffel hinzufügen, entfernen, hoch/runter
-- Einzel Sieger/Verlierer/ohne Weiterspiel
-- Doppel Sieger/Verlierer, gleiches Team, ein Wechsel
-- Staffelübergabe an automatisch erzeugtes Folgespiel
-- Parken und Übernahme bei manuell eingetragenem Spiel
-- ZIP-Integrität
+Syntax, Version, IDs, Suche, Korrektur, Abbruch, Staffel-Parken und ZIP geprüft.
