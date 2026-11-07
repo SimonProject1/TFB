@@ -1,3 +1,3 @@
-TFB 2011 Liga V5.2.0
+TFB 2011 Liga V5.2.1
 
-Backup- und Wiederherstellungsupdate mit drei Backup-Stufen, korrigiertem Download, vollständiger Wiederherstellung und passwortgeschütztem Werksreset.
+Bugfix: Spielernamen in den nativen Auswahl-Dropdowns werden auf hellem Hintergrund dunkel und lesbar dargestellt. Das geschlossene Auswahlfeld bleibt im dunklen Metalldesign.
