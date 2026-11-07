@@ -1,4 +1,4 @@
-const PASS='3140', KEY='tfb2011-liga-v3', APP_VERSION='5.8.0', RESTORE_KEY='tfb2011-restore-point';
+const PASS='3140', KEY='tfb2011-liga-v3', APP_VERSION='5.8.1', RESTORE_KEY='tfb2011-restore-point';
 const base={players:[],active:null,archive:[],legacyStats:{}};let D=load(),selectedPlayer=null,mode='single',pendingAction=null;D.players.forEach(p=>{if(p.active===undefined)p.active=true});
 const $=q=>document.querySelector(q),$$=q=>[...document.querySelectorAll(q)];
 function uid(){return crypto.randomUUID()}function load(){try{return {...base,...JSON.parse(localStorage.getItem(KEY)||'{}')}}catch{return structuredClone(base)}}function save(){localStorage.setItem(KEY,JSON.stringify(D));render()}

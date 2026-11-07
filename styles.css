@@ -18,3 +18,8 @@
 
 /* V5.8.0 challenge queue */
 .match-action-row{grid-column:1/-1;display:grid;grid-template-columns:auto auto minmax(140px,1fr);gap:8px;align-items:stretch}.match-action-row .compact-confirm{grid-column:auto;margin:0}.challenge-chip{margin-bottom:2px}.queue-list{display:grid;gap:8px;margin:12px 0;max-height:55vh;overflow:auto}.queue-row{display:grid;grid-template-columns:34px 1fr auto;gap:10px;align-items:center;padding:10px;border:1px solid var(--line);border-radius:10px}.queue-row>div{display:flex;gap:5px}.queue-number{display:grid;place-items:center;width:28px;height:28px;border-radius:50%;background:#d21f32;color:white;font-weight:900}@media(max-width:600px){.match-action-row{grid-template-columns:1fr 1fr}.match-action-row .compact-confirm{grid-column:1/-1}.queue-row{grid-template-columns:30px 1fr}.queue-row>div{grid-column:1/-1}}
+
+/* V5.8.1: all three match actions in one row */
+.match-action-row{grid-template-columns:minmax(180px,1.35fr) minmax(120px,.8fr) minmax(150px,1fr)!important;align-items:stretch!important}
+.match-action-row .challenge-btn,.match-action-row .queue-btn,.match-action-row .compact-confirm{grid-column:auto!important;width:100%!important;min-width:0!important;margin:0!important;min-height:50px!important;white-space:nowrap}
+@media(max-width:720px){.match-action-row{grid-template-columns:1fr 1fr!important}.match-action-row .compact-confirm{grid-column:1/-1!important}}
