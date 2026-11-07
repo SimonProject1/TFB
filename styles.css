@@ -23,3 +23,10 @@
 .match-action-row{grid-template-columns:minmax(180px,1.35fr) minmax(120px,.8fr) minmax(150px,1fr)!important;align-items:stretch!important}
 .match-action-row .challenge-btn,.match-action-row .queue-btn,.match-action-row .compact-confirm{grid-column:auto!important;width:100%!important;min-width:0!important;margin:0!important;min-height:50px!important;white-space:nowrap}
 @media(max-width:720px){.match-action-row{grid-template-columns:1fr 1fr!important}.match-action-row .compact-confirm{grid-column:1/-1!important}}
+
+/* V5.8.2: next challenger replaces separate queue banner */
+.match-action-row.has-queue{grid-template-columns:minmax(150px,.85fr) minmax(260px,1.55fr) minmax(150px,1fr)!important}
+.match-action-row.no-queue{grid-template-columns:minmax(180px,1fr) minmax(150px,1fr)!important}
+.next-challenger-btn{display:flex!important;align-items:center;justify-content:center;gap:7px;padding-inline:14px!important;background:linear-gradient(180deg,#fff4c7,#e6c55d)!important;border-color:#d8a82e!important;color:#291d00!important}
+.next-challenger-btn span{font-weight:600}.next-challenger-btn b{font-weight:900}.next-challenger-btn small{white-space:nowrap;font-weight:800;color:#5f4300}
+@media(max-width:820px){.match-action-row.has-queue{grid-template-columns:1fr 1.4fr!important}.match-action-row.has-queue .compact-confirm{grid-column:1/-1!important}.next-challenger-btn{flex-wrap:wrap}}

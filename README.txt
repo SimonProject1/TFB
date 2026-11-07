@@ -1,4 +1,4 @@
-TFB 2011 Liga V5.8.1
+TFB 2011 Liga V5.8.2
 
 Neu:
 - Herausfordern steht direkt neben Bestätigen.
@@ -9,3 +9,5 @@ Neu:
 - Keine Artworks und kein Service Worker enthalten.
 
 Layoutfix: Herausfordern, Staffel und Bestätigen stehen ab 721 px in einer gemeinsamen Zeile.
+
+Layoutfix: Die separate gelbe Hinweiszeile entfällt. Der mittlere Button zeigt direkt den nächsten Herausforderer und öffnet die komplette Staffel.
