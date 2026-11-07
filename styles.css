@@ -15,3 +15,5 @@
 
 /* V5.7.1 verified challenge persistence */
 .compact-match.open .match-meta em{max-width:48%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.compact-match.open:has(.challenge-btn.queued){border-color:#a87727;box-shadow:inset 3px 0 #d6a53b,0 4px 12px #0005}
+
+#saveChallenge,#saveChallenge *{user-select:none!important;-webkit-user-select:none!important}#saveChallenge[disabled]{cursor:wait;opacity:.72}
