@@ -34,7 +34,7 @@
 .rank-art{position:relative!important;display:inline-block!important;width:52px!important;height:52px!important;vertical-align:middle!important;font-size:0!important;line-height:1!important}.rank-art>img{position:absolute!important;inset:0!important;width:100%!important;height:100%!important;object-fit:contain!important}.rank-number{position:absolute!important;z-index:4!important;left:50%!important;top:42%!important;transform:translate(-50%,-50%)!important;display:flex!important;align-items:center!important;justify-content:center!important;width:22px!important;height:22px!important;margin:0!important;padding:0!important;line-height:1!important;font:900 17px/1 Segoe UI,Arial,sans-serif!important;color:#fff!important;text-shadow:0 1px 2px #000,0 0 4px #000!important}.rank-gold .rank-number{color:#fff2a8!important}.rank-bronze .rank-number{color:#ffe0c4!important}.rank-iron .rank-number{color:#e4e8eb!important}
 .player-name-awards{display:flex;align-items:center;gap:8px}.discipline-awards{display:inline-flex;align-items:center;gap:4px}.discipline-awards:empty{display:none}.discipline-award{display:inline-grid;width:34px;height:34px}.discipline-award img{width:100%;height:100%;object-fit:contain;filter:drop-shadow(0 2px 3px #000a)}.award-image-fallback{border:1px solid #747c83;border-radius:50%;background:radial-gradient(circle,#555d64,#161a1e 68%,#080a0c)}.award-image-fallback>img{display:none!important}
 
-/* V6.1.6 authoritative table column groups
+/* V6.1.7 authoritative table column groups
    # + Name | Sp + S + N | Saetze+ + Saetze- + Diff | P + Durchschnitt */
 .three-table th,.three-table td{border-left:0!important;border-right:0!important}
 .three-table th:nth-child(2),.three-table td:nth-child(2),
@@ -55,3 +55,38 @@
 .three-table th:nth-child(8),.three-table td:nth-child(8){width:9.5%!important}
 .three-table th:nth-child(9),.three-table td:nth-child(9),
 .three-table th:nth-child(10),.three-table td:nth-child(10){width:10%!important}
+
+/* V6.1.7 final separator correction
+   Groups: # + Spieler | Sp. + S + N | Sätze+ + Sätze- + Diff. | Pkt. + Ø */
+.season-table .three-table thead tr>th:nth-child(6),
+.season-table .three-table tbody tr>td:nth-child(6),
+.season-table .three-table thead tr>th:nth-child(7),
+.season-table .three-table tbody tr>td:nth-child(7){
+  border-left:0!important;
+  border-right:0!important;
+  box-shadow:none!important;
+  outline:0!important;
+  background-image:none!important;
+}
+.season-table .three-table thead tr>th:nth-child(6)::before,
+.season-table .three-table thead tr>th:nth-child(6)::after,
+.season-table .three-table tbody tr>td:nth-child(6)::before,
+.season-table .three-table tbody tr>td:nth-child(6)::after,
+.season-table .three-table thead tr>th:nth-child(7)::before,
+.season-table .three-table thead tr>th:nth-child(7)::after,
+.season-table .three-table tbody tr>td:nth-child(7)::before,
+.season-table .three-table tbody tr>td:nth-child(7)::after{
+  content:none!important;
+  display:none!important;
+  border:0!important;
+  box-shadow:none!important;
+}
+/* Draw only the requested group separators. */
+.season-table .three-table thead tr>th:nth-child(2),
+.season-table .three-table tbody tr>td:nth-child(2),
+.season-table .three-table thead tr>th:nth-child(5),
+.season-table .three-table tbody tr>td:nth-child(5),
+.season-table .three-table thead tr>th:nth-child(8),
+.season-table .three-table tbody tr>td:nth-child(8){
+  border-right:3px solid #697178!important;
+}
