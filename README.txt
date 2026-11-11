@@ -1,3 +1,4 @@
-TFB 2011 Liga V5.9.1 Testversion
-Ergebnis korrigieren, offene Spiele abbrechen, Spielersuche. Basis V5.8.2. Keine Artworks.
-Desktop-Layout: Abbrechen, Herausfordern, nächster Herausforderer und Bestätigen bleiben ab 981 px in einer Zeile.
+TFB 2011 Liga V5.7.3
+Herausfordern komplett neu aufgebaut. Alte Submit-, Capture- und Speicher-Fallback-Logik entfernt.
+Schließen funktioniert über X, Abbrechen, Escape und Klick auf den Hintergrund.
+Bestehende lokale Spieler-, Saison- und Spieldaten bleiben erhalten.
