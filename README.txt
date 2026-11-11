@@ -1,6 +1,10 @@
-TFB 2011 Liga V6.0.0
+TFB 2011 Liga V6.0.1
 
-Neue Navigation: Startseite, Spieler, Spiele, Tabellen, Archiv, Einstellungen.
-Tabellen: Gesamt, Einzel und Doppel mit Spielen, Siegen, Niederlagen, gewonnenen/verlorenen Sätzen, Satzdifferenz, Punkten und Durchschnitt.
-Archiv speichert künftig alle drei Abschlusstabellen. Alte Archive bleiben lesbar.
-Online und offline nutzbar. Kein Service Worker.
+Tabellenkorrektur:
+- Gesamt wertet bestätigte Einzel und Doppel gemeinsam.
+- Einzel wertet ausschließlich bestätigte Einzel.
+- Doppel wertet ausschließlich bestätigte Doppel.
+- Jede Ansicht zeigt Spiele, Siege, Niederlagen, gewonnene/verlorene Sätze, Satzdifferenz, Punkte und Durchschnitt.
+- Saisonarchive behalten Gesamt-, Einzel- und Doppeltabelle.
+- Alle Versionsangaben auf 6.0.1 vereinheitlicht.
+- Keine Artworks enthalten.

@@ -1,1 +1,7 @@
-Syntax, Version, IDs, Suche, Korrektur, Abbruch, Staffel-Parken und ZIP geprüft.
+V6.0.1 ausgeführte Tests:
+1. Zwei Einzel 2:0: Doppel bleibt vollständig 0.
+2. Ein Doppel 2:1: Einzel bleibt unverändert.
+3. Gesamt entspricht Einzel + Doppel.
+4. Satzwerte, Differenz, Punkte und Durchschnitt geprüft.
+5. Korrektur/Löschen durch Neuberechnung aus bestätigten Matches simuliert.
+6. JavaScript-Syntax, statische IDs, Versionen und ZIP-Integrität geprüft.
