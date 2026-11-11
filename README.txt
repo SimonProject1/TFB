@@ -1,4 +1,6 @@
-TFB 2011 Liga V5.7.3
-Herausfordern komplett neu aufgebaut. Alte Submit-, Capture- und Speicher-Fallback-Logik entfernt.
-Schließen funktioniert über X, Abbrechen, Escape und Klick auf den Hintergrund.
-Bestehende lokale Spieler-, Saison- und Spieldaten bleiben erhalten.
+TFB 2011 Liga V6.0.0
+
+Neue Navigation: Startseite, Spieler, Spiele, Tabellen, Archiv, Einstellungen.
+Tabellen: Gesamt, Einzel und Doppel mit Spielen, Siegen, Niederlagen, gewonnenen/verlorenen Sätzen, Satzdifferenz, Punkten und Durchschnitt.
+Archiv speichert künftig alle drei Abschlusstabellen. Alte Archive bleiben lesbar.
+Online und offline nutzbar. Kein Service Worker.
