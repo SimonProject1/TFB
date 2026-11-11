@@ -1,4 +1,4 @@
-const APP_VERSION='6.1.2', RESTORE_KEY='tfb2011-restore-point';
+const APP_VERSION='6.1.3', RESTORE_KEY='tfb2011-restore-point';
 const PASS='3140', KEY='tfb2011-liga-v3';
 const base={players:[],active:null,archive:[],legacyStats:{}};let D=load(),selectedPlayer=null,mode='single',pendingAction=null;D.players.forEach(p=>{if(p.active===undefined)p.active=true});
 const $=q=>document.querySelector(q),$$=q=>[...document.querySelectorAll(q)];const APP_BASE_URL=new URL('./',document.currentScript?.src||document.baseURI);function localAsset(path){return new URL(path.replace(/^\.\//,''),APP_BASE_URL).href}function rankAsset(key){return localAsset(`assets/ranks/rank-${key}.png`)}function tableAwardAsset(name){return localAsset(`assets/table-awards/${name}.png`)}function tableAwardFallback(img){img.hidden=true;img.closest('.podium-badge,.discipline-award')?.classList.add('award-image-fallback')}function rankAssetFallback(img){img.hidden=true;img.closest('.rank-avatar')?.classList.add('rank-image-fallback')}
@@ -74,20 +74,25 @@ function tableRows(mode=tableMode,matches=D.active?.matches||[]){return standing
   function renderTables(){
     if(!D.active)return;
     const rows=tableRows(),labels={overall:'Gesamt',single:'Einzel',double:'Doppel'};
-    const allMatches=D.active.matches||[], confirmed={overall:allMatches.filter(m=>m.done).length,single:allMatches.filter(m=>m.done&&m.type==='single').length,double:allMatches.filter(m=>m.done&&m.type==='double').length};
-    const eligible=confirmed[tableMode]>=3, singleRows=standings(allMatches,'single'), doubleRows=standings(allMatches,'double');
+    const allMatches=D.active.matches||[],done=allMatches.filter(m=>m.done);
+    const confirmed={overall:done.length,single:done.filter(m=>m.type==='single').length,double:done.filter(m=>m.type==='double').length};
+    const singleRows=standings(allMatches,'single'),doubleRows=standings(allMatches,'double');
     const singlePlace=new Map(singleRows.slice(0,3).map((r,i)=>[r.id,i+1])),doublePlace=new Map(doubleRows.slice(0,3).map((r,i)=>[r.id,i+1]));
-    const metal=p=>['gold','silver','bronze'][p-1], award=(kind,place,label)=>`<span class="discipline-award ${kind}-${metal(place)}" title="${place}. Platz ${label}" aria-label="${place}. Platz ${label}"><img src="${tableAwardAsset(`${kind}-${metal(place)}`)}" alt="" onerror="tableAwardFallback(this)"></span>`;
-    $('#tableStatusText').textContent=`${labels[tableMode]} · ${rows.length} ${rows.length===1?'Spieler':'Spieler'}`;
+    const metal=p=>['gold','silver','bronze'][p-1];
+    const award=(kind,place,label)=>`<span class="discipline-award ${kind}-${metal(place)}" title="${place}. Platz ${label}" aria-label="${place}. Platz ${label}"><img src="${tableAwardAsset(`${kind}-${metal(place)}`)}" alt="" onerror="tableAwardFallback(this)"></span>`;
+    $('#tableStatusText').textContent=`${labels[tableMode]} · ${rows.length} Spieler`;
     $('#standingBody').innerHTML=rows.map((r,i)=>{
-      const place=i+1, podium=eligible&&place<=3, leader=podium&&place===1?' leader-row':'',zero=r.g===0?' zero-row':'',diff=r.sf-r.sa,diffClass=diff>0?'positive':diff<0?'negative':'';
-      const rankMetal=podium?metal(place):'iron',rankLabel=podium?`${place}. Platz ${labels[tableMode]}`:`Tabellenplatz ${place}`;
-      const rank=`<span class="podium-badge podium-${rankMetal}" title="${rankLabel}" aria-label="${rankLabel}"><img src="${tableAwardAsset(`podium-${rankMetal}`)}" alt="" onerror="tableAwardFallback(this)"><span class="podium-number">${place}</span></span>`;
+      const place=i+1,eligible=confirmed[tableMode]>=3,podium=eligible&&place<=3,metalName=podium?metal(place):'iron';
+      const rankKind=tableMode==='overall'?'podium':tableMode;
+      const rankLabel=podium?`${place}. Platz ${labels[tableMode]}`:`Tabellenplatz ${place}`;
+      const rank=`<span class="rank-art rank-art-${rankKind} rank-${metalName}" title="${rankLabel}" aria-label="${rankLabel}"><img src="${tableAwardAsset(`${rankKind}-${metalName}`)}" alt="" onerror="tableAwardFallback(this)"><span class="rank-number">${place}</span></span>`;
       let awards='';
       if(tableMode==='overall'){
         if(confirmed.single>=3&&singlePlace.has(r.id))awards+=award('single',singlePlace.get(r.id),'Einzel');
         if(confirmed.double>=3&&doublePlace.has(r.id))awards+=award('double',doublePlace.get(r.id),'Doppel');
-      }
+      }else if(tableMode==='single'&&eligible&&place<=3){awards=award('single',place,'Einzel')}
+      else if(tableMode==='double'&&eligible&&place<=3){awards=award('double',place,'Doppel')}
+      const leader=podium&&place===1?' leader-row':'',zero=r.g===0?' zero-row':'',diff=r.sf-r.sa,diffClass=diff>0?'positive':diff<0?'negative':'';
       return `<tr class="${leader}${zero}"><td>${rank}</td><td class="player-cell"><span class="player-name-awards"><b>${esc(r.name)}</b><span class="discipline-awards">${awards}</span></span>${i>0&&rows[i-1].pts===r.pts?'<small class="tie">punktgleich</small>':''}</td><td>${r.g}</td><td>${r.w}</td><td>${r.l}</td><td>${r.sf}</td><td>${r.sa}</td><td class="set-diff ${diffClass}">${diff>0?'+'+diff:diff}</td><td class="total-points"><b>${r.pts}</b></td><td>${r.g?(r.pts/r.g).toFixed(2).replace('.',','):'0,00'}</td></tr>`;
     }).join('')||'<tr><td colspan="10">Keine Spieler</td></tr>';
   }
