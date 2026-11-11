@@ -25,3 +25,17 @@
 
 /* V6.0.0 separate Games, Tables and Archive */
 .compact-season-toolbar{grid-template-columns:1fr auto!important}.table-view-head{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:14px}.table-view-head h2{margin:0}.table-view-head p{margin:4px 0 0;color:var(--muted)}.table-tabs{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;padding:5px;border:1px solid #555d64;border-radius:12px;background:#111519}.table-tabs button{min-width:110px;padding:10px 16px;border:1px solid #454c53;border-radius:8px;background:#24292e;color:#cbd0d4;font-weight:850}.table-tabs button.active{background:linear-gradient(180deg,#ef4053,#a80d20);border-color:#ff6675;color:#fff}.three-table{min-width:0!important;table-layout:fixed}.three-table th,.three-table td{text-align:center!important;padding:11px 7px!important}.three-table th:nth-child(2),.three-table td:nth-child(2){text-align:left!important;width:18%}.set-diff.positive{color:#65dda0}.set-diff.negative{color:#ff7582}.archive-modal .archive-table{margin-bottom:18px}.archive-modal .archive-table table{min-width:760px}@media(max-width:760px){.table-view-head{align-items:stretch;flex-direction:column}.table-tabs button{min-width:0}.three-table{min-width:780px!important}}
+
+/* V6.1.0 table awards and corrected visual column groups */
+.three-table th:nth-child(2),.three-table td:nth-child(2),
+.three-table th:nth-child(5),.three-table td:nth-child(5),
+.three-table th:nth-child(8),.three-table td:nth-child(8){border-right:2px solid #697178!important}
+.three-table th:nth-child(6),.three-table td:nth-child(6),.three-table th:nth-child(7),.three-table td:nth-child(7),.three-table th:nth-child(9),.three-table td:nth-child(9){border-left:0!important}
+.podium-badge{position:relative;display:inline-grid;place-items:center;width:48px;height:48px;vertical-align:middle}
+.podium-badge img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;filter:drop-shadow(0 3px 4px #0009)}
+.podium-number{position:relative;z-index:2;display:grid;place-items:center;width:48%;height:48%;font-size:16px;font-weight:950;color:#f7f8f9;text-shadow:0 2px 2px #000,0 0 3px #000}
+.podium-gold .podium-number{color:#fff4ba}.podium-silver .podium-number{color:#fff}.podium-bronze .podium-number{color:#ffe0c2}
+.player-name-awards{display:flex;align-items:center;gap:8px;min-width:0}.player-name-awards>b{overflow:hidden;text-overflow:ellipsis}.discipline-awards{display:inline-flex;align-items:center;gap:4px;flex:0 0 auto}
+.discipline-award{position:relative;display:inline-grid;place-items:center;width:30px;height:30px;border-radius:50%}.discipline-award img{width:100%;height:100%;object-fit:contain;filter:drop-shadow(0 2px 3px #000a)}
+.award-image-fallback{border:1px solid #747c83;background:radial-gradient(circle at 35% 30%,#697178,#22272c 58%,#090b0d);box-shadow:inset 0 0 0 2px #111519}.podium-gold.award-image-fallback{border-color:#e2b842}.podium-silver.award-image-fallback{border-color:#c9d0d5}.podium-bronze.award-image-fallback{border-color:#ba7545}.discipline-award.award-image-fallback:after{content:'•';color:#d51e32;font-size:17px}.discipline-award.award-image-fallback img,.podium-badge.award-image-fallback img{display:none!important}
+@media(max-width:900px){.podium-badge{width:42px;height:42px}.discipline-award{width:27px;height:27px}.player-name-awards{gap:5px}}
