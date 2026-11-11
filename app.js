@@ -1,4 +1,4 @@
-const APP_VERSION='6.2.0', RESTORE_KEY='tfb2011-restore-point';
+const APP_VERSION='6.1.6', RESTORE_KEY='tfb2011-restore-point';
 const PASS='3140', KEY='tfb2011-liga-v3';
 const base={players:[],active:null,archive:[],legacyStats:{}};let D=load(),selectedPlayer=null,mode='single',pendingAction=null;D.players.forEach(p=>{if(p.active===undefined)p.active=true});
 const $=q=>document.querySelector(q),$$=q=>[...document.querySelectorAll(q)];const APP_BASE_URL=new URL('./',document.currentScript?.src||document.baseURI);function localAsset(path){return new URL(path.replace(/^\.\//,''),APP_BASE_URL).href}function rankAsset(key){return localAsset(`assets/ranks/rank-${key}.png`)}function tableAwardAsset(name){return localAsset(`assets/table-awards/${name}.png`)}function tableAwardFallback(img){img.hidden=true;img.closest('.rank-art,.discipline-award')?.classList.add('award-image-fallback')}function rankAssetFallback(img){img.hidden=true;img.closest('.rank-avatar')?.classList.add('rank-image-fallback')}
@@ -99,13 +99,3 @@ $$('dialog').forEach(d=>{d.addEventListener('cancel',()=>{if(d.id==='challengeDi
 $$('dialog .close,[data-close-dialog]').forEach(b=>b.addEventListener('click',e=>{e.preventDefault();const d=b.closest('dialog');if(d?.open)d.close()}));
 $$('dialog form').forEach(form=>form.addEventListener('submit',e=>e.preventDefault()));
 render();
-
-// Developer-only ELO parallel system (V6.2.0)
-const DEV_PASSWORD='0156',ELO_START=1000,ELO_K=32;let eloMode='single';
-function eloExpected(a,b){return 1/(1+Math.pow(10,(b-a)/400))}
-function eloMatches(){const archived=(D.archive||[]).flatMap(s=>(s.matches||[]).map(m=>({...m,_season:s.finished||s.started||''})));const active=(D.active?.matches||[]).map(m=>({...m,_season:D.active.started||''}));return [...archived,...active].filter(m=>m.done).sort((a,b)=>String(a.created||a._season).localeCompare(String(b.created||b._season)))}
-function calculateElo(mode){const ids=D.players.map(p=>p.id),ratings=Object.fromEntries(ids.map(id=>[id,ELO_START])),games=Object.fromEntries(ids.map(id=>[id,0])),start={...ratings};for(const m of eloMatches().filter(m=>m.type===mode)){const A=m.a||[],B=m.b||[];if(!A.length||!B.length||[...A,...B].some(id=>ratings[id]===undefined))continue;const ra=A.reduce((s,id)=>s+ratings[id],0)/A.length,rb=B.reduce((s,id)=>s+ratings[id],0)/B.length,sa=m.sa>m.sb?1:m.sa<m.sb?0:.5,delta=Math.round(ELO_K*(sa-eloExpected(ra,rb)));A.forEach(id=>{ratings[id]+=delta;games[id]++});B.forEach(id=>{ratings[id]-=delta;games[id]++})}return D.players.map(p=>({id:p.id,name:p.name,rating:ratings[p.id]??ELO_START,games:games[p.id]||0,change:(ratings[p.id]??ELO_START)-ELO_START})).sort((a,b)=>b.rating-a.rating||b.games-a.games||a.name.localeCompare(b.name,'de'))}
-function renderElo(){const rows=calculateElo(eloMode);$('#eloBody').innerHTML=rows.map((r,i)=>`<tr><td>${i+1}</td><td><b>${esc(r.name)}</b></td><td><b>${r.rating}</b></td><td>${r.games}</td><td class="${r.change>0?'positive':r.change<0?'negative':''}">${r.change>0?'+':''}${r.change}</td></tr>`).join('')||'<tr><td colspan="5">Keine Spieler</td></tr>';$$('[data-elo-mode]').forEach(b=>b.classList.toggle('active',b.dataset.eloMode===eloMode))}
-$('#openDeveloper').onclick=()=>{$('#developerPassword').value='';$('#developerLoginError').textContent='';$('#developerLoginDialog').showModal()};
-$('#confirmDeveloperLogin').onclick=()=>{if($('#developerPassword').value!==DEV_PASSWORD)return $('#developerLoginError').textContent='Passwort ist nicht korrekt.';closeDialog('#developerLoginDialog');eloMode='single';renderElo();$('#developerDialog').showModal()};
-$$('[data-elo-mode]').forEach(b=>b.onclick=()=>{eloMode=b.dataset.eloMode;renderElo()});
