@@ -1,4 +1,4 @@
-const APP_VERSION='6.1.1', RESTORE_KEY='tfb2011-restore-point';
+const APP_VERSION='6.1.2', RESTORE_KEY='tfb2011-restore-point';
 const PASS='3140', KEY='tfb2011-liga-v3';
 const base={players:[],active:null,archive:[],legacyStats:{}};let D=load(),selectedPlayer=null,mode='single',pendingAction=null;D.players.forEach(p=>{if(p.active===undefined)p.active=true});
 const $=q=>document.querySelector(q),$$=q=>[...document.querySelectorAll(q)];const APP_BASE_URL=new URL('./',document.currentScript?.src||document.baseURI);function localAsset(path){return new URL(path.replace(/^\.\//,''),APP_BASE_URL).href}function rankAsset(key){return localAsset(`assets/ranks/rank-${key}.png`)}function tableAwardAsset(name){return localAsset(`assets/table-awards/${name}.png`)}function tableAwardFallback(img){img.hidden=true;img.closest('.podium-badge,.discipline-award')?.classList.add('award-image-fallback')}function rankAssetFallback(img){img.hidden=true;img.closest('.rank-avatar')?.classList.add('rank-image-fallback')}
@@ -81,7 +81,8 @@ function tableRows(mode=tableMode,matches=D.active?.matches||[]){return standing
     $('#tableStatusText').textContent=`${labels[tableMode]} · ${rows.length} ${rows.length===1?'Spieler':'Spieler'}`;
     $('#standingBody').innerHTML=rows.map((r,i)=>{
       const place=i+1, podium=eligible&&place<=3, leader=podium&&place===1?' leader-row':'',zero=r.g===0?' zero-row':'',diff=r.sf-r.sa,diffClass=diff>0?'positive':diff<0?'negative':'';
-      const rank=podium?`<span class="podium-badge podium-${metal(place)}" title="${place}. Platz ${labels[tableMode]}" aria-label="${place}. Platz ${labels[tableMode]}"><img src="${tableAwardAsset(`podium-${metal(place)}`)}" alt="" onerror="tableAwardFallback(this)"><span class="podium-number">${place}</span></span>`:`<span class="rank-chip">${place}</span>`;
+      const rankMetal=podium?metal(place):'iron',rankLabel=podium?`${place}. Platz ${labels[tableMode]}`:`Tabellenplatz ${place}`;
+      const rank=`<span class="podium-badge podium-${rankMetal}" title="${rankLabel}" aria-label="${rankLabel}"><img src="${tableAwardAsset(`podium-${rankMetal}`)}" alt="" onerror="tableAwardFallback(this)"><span class="podium-number">${place}</span></span>`;
       let awards='';
       if(tableMode==='overall'){
         if(confirmed.single>=3&&singlePlace.has(r.id))awards+=award('single',singlePlace.get(r.id),'Einzel');
