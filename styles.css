@@ -91,9 +91,9 @@
   border-right:3px solid #697178!important;
 }
 
-/* V6.2.1 developer ELO area */
+/* V6.2.2 developer ELO area */
 .dev-card{border-color:#7b2632}.developer-modal{max-width:900px}.elo-tabs{display:flex;gap:8px;margin:16px 0}.elo-tabs button{padding:10px 18px;border:1px solid #4c555d;background:#23292e;color:#d4d8db;border-radius:8px;font-weight:850}.elo-tabs button.active{background:linear-gradient(180deg,#ef4053,#a80d20);color:#fff;border-color:#ff6574}.elo-table{width:100%;border-collapse:collapse}.elo-table th,.elo-table td{padding:12px;border-bottom:1px solid #343b41;text-align:center}.elo-table th:nth-child(2),.elo-table td:nth-child(2){text-align:left}.elo-table .positive{color:#65dda0}.elo-table .negative{color:#ff7582}
 
-/* V6.2.1 unified dialog UX: active dismissal only through top-right X */
+/* V6.2.2 unified dialog UX: active dismissal only through top-right X */
 dialog .legacy-dialog-close{display:none!important}
 dialog .close{z-index:20;cursor:pointer}
