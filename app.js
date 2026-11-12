@@ -1,4 +1,4 @@
-const APP_VERSION='6.2.4', RESTORE_KEY='tfb2011-restore-point';
+const APP_VERSION='6.2.2', RESTORE_KEY='tfb2011-restore-point';
 const PASS='3140', KEY='tfb2011-liga-v3';
 const base={players:[],active:null,archive:[],legacyStats:{}};let D=load(),selectedPlayer=null,mode='single',pendingAction=null;D.players.forEach(p=>{if(p.active===undefined)p.active=true});
 const $=q=>document.querySelector(q),$$=q=>[...document.querySelectorAll(q)];const APP_BASE_URL=new URL('./',document.currentScript?.src||document.baseURI);function localAsset(path){return new URL(path.replace(/^\.\//,''),APP_BASE_URL).href}function rankAsset(key){return localAsset(`assets/ranks/rank-${key}.png`)}function tableAwardAsset(name){return localAsset(`assets/table-awards/${name}.png`)}function tableAwardFallback(img){img.hidden=true;img.closest('.rank-art,.discipline-award')?.classList.add('award-image-fallback')}function rankAssetFallback(img){img.hidden=true;img.closest('.rank-avatar')?.classList.add('rank-image-fallback')}
@@ -100,7 +100,7 @@ $$('dialog .close,[data-close-dialog]').forEach(b=>b.addEventListener('click',e=
 $$('dialog form').forEach(form=>form.addEventListener('submit',e=>e.preventDefault()));
 render();
 
-// Developer-only ELO parallel system (V6.2.4)
+// Developer-only ELO parallel system (V6.2.2)
 const DEV_PASSWORD='0156',ELO_START=1000,ELO_K=32;let eloMode='single';
 function eloExpected(a,b){return 1/(1+Math.pow(10,(b-a)/400))}
 function eloMatches(){const archived=(D.archive||[]).flatMap(s=>(s.matches||[]).map(m=>({...m,_season:s.finished||s.started||''})));const active=(D.active?.matches||[]).map(m=>({...m,_season:D.active.started||''}));return [...archived,...active].filter(m=>m.done).sort((a,b)=>String(a.created||a._season).localeCompare(String(b.created||b._season)))}
@@ -110,7 +110,7 @@ $('#openDeveloper').onclick=()=>{$('#developerPassword').value='';$('#developerL
 $('#confirmDeveloperLogin').onclick=()=>{if($('#developerPassword').value!==DEV_PASSWORD)return $('#developerLoginError').textContent='Passwort ist nicht korrekt.';closeDialog('#developerLoginDialog');eloMode='single';renderElo();$('#developerDialog').showModal()};
 $$('[data-elo-mode]').forEach(b=>b.onclick=()=>{eloMode=b.dataset.eloMode;renderElo()});
 
-// Unified popup keyboard and close behavior (V6.2.4)
+// Unified popup keyboard and close behavior (V6.2.2)
 const DIALOG_CONFIRM_ACTION={developerLoginDialog:'confirmDeveloperLogin',seasonDialog:'createSeason',playerDialog:'savePlayer',matchDialog:'createMatch',challengeDialog:'saveChallenge',followUpDialog:'startFollowUp',passwordDialog:'confirmAction',editPlayerDialog:'savePlayerEdit',importDialog:'confirmImport',resetDialog:'confirmReset'};
 function dialogFields(dialog){return [...dialog.querySelectorAll('input:not([type="hidden"]),select,textarea')].filter(el=>!el.disabled&&!el.hidden&&el.offsetParent!==null)}
 function dialogConfirmButton(dialog){const id=DIALOG_CONFIRM_ACTION[dialog.id];return id?document.getElementById(id):dialog.querySelector('button.primary:not(.close),button.danger:not(.close)')}
