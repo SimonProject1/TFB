@@ -108,9 +108,49 @@ dialog .close{z-index:20;cursor:pointer}
 /* V6.2.9: eigenes Artwork fuer den Gesamt-Tabellenfuehrer */
 .leader-art-overall img{width:104px;height:104px;object-fit:contain}
 
-/* V6.3.0: einheitliches Startseiten-Artwork-Set */
-.home-leader-card{display:grid;grid-template-columns:104px minmax(0,1fr);align-items:center;column-gap:16px}
-.home-leader-card .leader-art{position:relative;width:104px;min-width:104px;height:104px;margin:0;display:grid;place-items:center;overflow:hidden}
-.home-leader-card .leader-art img,.home-leader-card .leader-art-overall img{display:block;width:86px;height:86px;max-width:86px;max-height:86px;object-fit:contain}
-.home-leader-card .leader-copy{min-width:0;margin:0;padding:0}
-@media(max-width:900px){.home-leader-card{grid-template-columns:92px minmax(0,1fr);column-gap:12px}.home-leader-card .leader-art{width:92px;min-width:92px;height:92px}.home-leader-card .leader-art img,.home-leader-card .leader-art-overall img{width:78px;height:78px;max-width:78px;max-height:78px}}
+/* V6.3.1: korrigiertes, kollisionsfreies Startseiten-Artwork-Layout */
+.leader-card{
+  display:grid;
+  grid-template-columns:96px minmax(0,1fr);
+  align-items:center;
+  column-gap:18px;
+  min-height:124px;
+}
+.leader-card .leader-art{
+  position:relative;
+  display:grid;
+  place-items:center;
+  width:96px;
+  min-width:96px;
+  height:96px;
+  margin:0;
+  overflow:hidden;
+}
+.leader-card .leader-art img,
+.leader-card .leader-art-overall img{
+  position:static;
+  inset:auto;
+  display:block;
+  width:82px;
+  height:82px;
+  max-width:82px;
+  max-height:82px;
+  object-fit:contain;
+}
+.leader-card .leader-copy{
+  position:relative;
+  z-index:1;
+  min-width:0;
+  margin:0;
+  padding:0;
+}
+@media(max-width:1050px){
+  .leader-card{grid-template-columns:88px minmax(0,1fr);column-gap:14px;min-height:108px}
+  .leader-card .leader-art{width:88px;min-width:88px;height:88px}
+  .leader-card .leader-art img,.leader-card .leader-art-overall img{width:76px;height:76px;max-width:76px;max-height:76px}
+}
+@media(max-width:650px){
+  .leader-card{grid-template-columns:78px minmax(0,1fr);column-gap:12px}
+  .leader-card .leader-art{width:78px;min-width:78px;height:78px}
+  .leader-card .leader-art img,.leader-card .leader-art-overall img{width:68px;height:68px;max-width:68px;max-height:68px}
+}
