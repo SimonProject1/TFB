@@ -1,4 +1,4 @@
-const APP_VERSION='6.3.1', RESTORE_KEY='tfb2011-restore-point';
+const APP_VERSION='6.3.2', RESTORE_KEY='tfb2011-restore-point';
 const PASS='3140', KEY='tfb2011-liga-v3';
 const base={players:[],active:null,archive:[],legacyStats:{}};let D=load(),selectedPlayer=null,mode='single',pendingAction=null;D.players.forEach(p=>{if(p.active===undefined)p.active=true});
 const $=q=>document.querySelector(q),$$=q=>[...document.querySelectorAll(q)];const APP_BASE_URL=new URL('./',document.currentScript?.src||document.baseURI);function localAsset(path){return new URL(path.replace(/^\.\//,''),APP_BASE_URL).href}function rankAsset(key){return localAsset(`assets/ranks/rank-${key}.png`)}function tableAwardAsset(name){return localAsset(`assets/table-awards/${name}.png`)}function tableAwardFallback(img){img.hidden=true;img.closest('.rank-art,.discipline-award')?.classList.add('award-image-fallback')}function rankAssetFallback(img){img.hidden=true;img.closest('.rank-avatar')?.classList.add('rank-image-fallback')}
