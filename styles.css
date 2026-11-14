@@ -300,3 +300,35 @@ html{scrollbar-color:var(--scroll-thumb) var(--scroll-track);scrollbar-width:thi
 @media(max-width:1499px){.pc-corner{width:64px;height:64px}}
 @media(max-width:1050px){.pc-corner{width:54px;height:54px}}
 @media(max-width:760px){.pc-corner{width:42px;height:42px}.player-card-theme-platinum .pc-corner,.player-card-theme-legend .pc-corner{background-size:contain}}
+
+
+/* V6.5.2: Player-Card-Feinschliff */
+/* Graue Seitenteile am Rangabzeichen entfernen */
+.player-card-rank:before,.player-card-rank:after{display:none!important}
+
+/* Medaillen deutlich groesser, Fassungen proportional erweitert */
+.player-card-v640{grid-template-columns:170px minmax(0,1fr) 148px;padding-right:34px}
+.player-card-showcase{width:132px;grid-template-rows:repeat(3,68px);gap:6px}
+.player-card-showcase>img,.player-card-empty-medal{width:64px;height:64px;max-width:64px;max-height:64px;padding:4px;border-width:3px}
+
+/* Bearbeiten ausserhalb der Eckgrafik, links neben dem Medaillenbereich */
+.player-card-edit{right:166px;top:18px;width:38px;height:38px}
+
+@media(max-width:1499px){
+ .player-card-v640{grid-template-columns:150px minmax(0,1fr) 188px;padding-right:28px}
+ .player-card-showcase{width:auto;grid-template-columns:repeat(3,58px);grid-template-rows:58px;gap:7px}
+ .player-card-showcase>img,.player-card-empty-medal{width:54px;height:54px;max-width:54px;max-height:54px}
+ .player-card-edit{right:22px;top:18px}
+}
+@media(max-width:1050px){
+ .player-card-v640{grid-template-columns:126px minmax(0,1fr);padding-right:20px}
+ .player-card-showcase{grid-template-columns:repeat(3,54px);grid-template-rows:54px}
+ .player-card-showcase>img,.player-card-empty-medal{width:50px;height:50px;max-width:50px;max-height:50px}
+ .player-card-edit{right:16px;top:14px}
+}
+@media(max-width:760px){
+ .player-card-v640{grid-template-columns:90px minmax(0,1fr);padding-right:16px}
+ .player-card-showcase{grid-template-columns:repeat(3,48px);grid-template-rows:48px}
+ .player-card-showcase>img,.player-card-empty-medal{width:44px;height:44px;max-width:44px;max-height:44px}
+ .player-card-edit{right:12px;top:12px;width:34px;height:34px}
+}

@@ -1,0 +1,8 @@
+Prüfungen V6.5.2
+- JavaScript-Syntax
+- Manifest gültig
+- Rang-Seitendekoration ausgeblendet
+- Medaillen 64 px auf großer Ansicht
+- Bearbeiten-Button außerhalb der Eckgrafik
+- responsive Größen geprüft
+- ZIP-Integrität

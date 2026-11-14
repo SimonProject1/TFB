@@ -1,2 +1,2 @@
-V6.5.1 Rang-Eckartworks
-Alle Hauptdateien und assets/player-card-corners ersetzen. Danach Strg+F5 drücken.
+V6.5.2 Player-Card-Feinschliff
+Hauptdateien ersetzen. assets/player-card-corners bleibt unverändert. Danach Strg+F5 drücken.
