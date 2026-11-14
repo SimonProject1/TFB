@@ -1,0 +1,8 @@
+Prüfungen V6.5.1
+- 15 Eck-Artworks vorhanden
+- alle Dateien 256 x 256 RGBA
+- transparenter Hintergrund geprüft
+- Rangzuordnung für 9 Zustände
+- individuelle Platin- und Legenden-Ecken
+- responsive Größen 76/64/54/42 px
+- JavaScript-Syntax, Manifest und ZIP geprüft
