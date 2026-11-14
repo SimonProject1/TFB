@@ -1,0 +1,10 @@
+Statische Prüfungen V6.3.5
+- JavaScript-Syntax: geprüft
+- HTML-IDs: keine Duplikate
+- JSON-Manifest: gültig
+- Historienlöschung: entfernt
+- Backup-Validierung: vor Vorschau und Import aktiv
+- Mischdaten-Doppelzählung: blockiert
+- Hintergrund- und Escape-Schließen: blockiert
+- drei Startseiten-Artwork-Referenzen: gesetzt
+- ZIP-Integrität: geprüft

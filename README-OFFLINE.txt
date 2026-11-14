@@ -1,7 +1,6 @@
-TFB 2011 Liga V6.3.4 - Online/Offline Update
+TFB 2011 Liga V6.3.5 - Update
 
-1. Vorhandenen assets-Ordner unverändert lassen.
-2. index.html, app.js, styles.css, manifest.json und README-Dateien ersetzen.
-3. Online: Dateien ins GitHub-Hauptverzeichnis hochladen.
-4. Offline: index.html direkt öffnen.
-5. Bei alter Darstellung Browsercache mit Strg+F5 aktualisieren.
+1. Bestehenden assets-Ordner unverändert lassen.
+2. Die sechs Dateien dieses Pakets ersetzen.
+3. Prüfen, ob assets/table-awards die drei home-*-leader.png enthält.
+4. Online nach Upload Strg+F5 drücken; offline index.html neu öffnen.
