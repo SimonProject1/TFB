@@ -1,0 +1,8 @@
+Prüfungen V6.4.2
+- neun Artwork-Dateien vorhanden
+- automatische Rangzuordnung vorhanden
+- JavaScript-Syntax
+- Manifest gültig
+- undefinierte Medaillenfunktion nicht vorhanden
+- feste relative Slotkoordinaten
+- ZIP-Integrität

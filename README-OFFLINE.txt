@@ -1,2 +1,2 @@
-V6.4.1 Player Card Fix
-Alle Dateien ersetzen, assets/player-card übernehmen und danach Strg+F5 drücken.
+V6.4.2 Rang-Player-Cards
+Alle Hauptdateien und den vollständigen Ordner assets/player-card ersetzen. Danach Browser mit Strg+F5 aktualisieren.

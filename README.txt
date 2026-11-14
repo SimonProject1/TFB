@@ -1,11 +1,14 @@
-TFB 2011 Liga V6.4.1 - Player Card Fix
+TFB 2011 Liga V6.4.2 - Rang-Player-Cards
 
-Behoben:
-- Spielerprofil öffnet nach Auswahl wieder zuverlässig.
-- Ursache war ein nicht vorhandener Funktionsaufruf für die drei Medaillenbilder der Player Card.
-- Gemeinsame Funktion medalImagePath() für Medaillenpfade ergänzt.
-- Ungültige oder veraltete Spielerauswahl wird sicher zurückgesetzt.
-- Player-Card-Artwork und Oberfläche aus V6.4.0 bleiben erhalten.
+Neu:
+- neun separate Player-Card-Artworks: Eisen, Stahl, Bronze, Silber, Gold, Platin, Legende, Inaktiv und Leer.
+- automatische Artwork-Auswahl anhand des aktuellen Spielerrangs.
+- Rangabzeichen exakt innerhalb der linken Fassung verkleinert.
+- drei Medaillen exakt in den rechten Fassungen positioniert.
+- Name, Rangfortschritt und Kennzahlen vollständig innerhalb der Kartenmitte.
+- Bearbeiten als kompakter Stift-Button außerhalb der Medaillenslots.
+- Profilregister sind anklickbar und markieren den gewählten Bereich.
+- responsive Anpassung für 1100 px und 760 px.
 
 Installation:
-Alle Dateien ersetzen. Den enthaltenen Ordner assets/player-card ebenfalls hochladen bzw. beibehalten. Anschließend Strg+F5 drücken.
+Alle Hauptdateien ersetzen und den kompletten Ordner assets/player-card hochladen. Danach Strg+F5.
