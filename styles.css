@@ -189,3 +189,27 @@ html{scrollbar-color:var(--scroll-thumb) var(--scroll-track);scrollbar-width:thi
   body.view-players .profile{height:100%;min-height:0;overflow-y:auto;overscroll-behavior-y:contain}
   body.view-players .profile-empty{min-height:100%;height:100%}
 }
+
+
+/* V6.4.0: Gunmetal Player Card */
+.player-card-v640{position:relative;isolation:isolate;min-height:240px;display:grid;grid-template-columns:220px minmax(0,1fr) 150px;align-items:center;gap:18px;padding:30px 54px 30px 34px;overflow:hidden}
+.player-card-frame{position:absolute;inset:0;z-index:-2;width:100%;height:100%;object-fit:fill;pointer-events:none}
+.player-card-v640:after{content:"";position:absolute;inset:20px 22px;z-index:-1;background:linear-gradient(90deg,transparent 0 23%,rgba(7,10,12,.46) 31% 75%,transparent 86%);pointer-events:none}
+.player-card-rank{display:grid;place-items:center;min-width:0}
+.player-card-rank .rank-avatar.large{width:142px;height:142px}
+.player-card-copy{min-width:0;padding:0 6px}
+.player-card-copy small{display:block;color:#ff5365;font-size:12px;font-weight:950;letter-spacing:.18em;margin-bottom:6px}
+.player-card-copy h2{margin:0 0 8px;font-size:clamp(28px,3vw,46px);line-height:1;text-shadow:0 3px 5px #000;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.player-card-copy .rank-progress{max-width:520px}
+.player-card-status{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-top:13px}
+.player-card-status>span:not(.player-state){padding:6px 10px;border:1px solid #4a5157;border-radius:999px;background:rgba(7,10,12,.78);color:#d8dde0;font-size:12px;font-weight:850}
+.player-card-showcase{display:grid;grid-template-rows:repeat(3,58px);gap:4px;place-items:center;padding-left:15px}
+.player-card-showcase img{display:block;width:54px;height:54px;object-fit:contain;filter:drop-shadow(0 3px 4px #000)}
+.player-card-empty-medal{display:grid;place-items:center;width:47px;height:47px;border-radius:50%;border:2px solid #755e31;background:radial-gradient(circle,#252b30,#0c0f11 72%);color:#77694c;font-size:12px;font-weight:950}
+.player-card-edit{position:absolute;right:35px;bottom:18px;z-index:3;padding:8px 13px;font-size:12px}
+.profile-tabs-v640{display:flex;gap:8px;align-items:center;overflow-x:auto;padding:4px 8px 12px;border-bottom:1px solid #30373c;margin:0 18px}
+.profile-tabs-v640 span{white-space:nowrap;padding:8px 12px;border:1px solid #333b40;border-radius:9px;background:#101519;color:#89939a;font-size:12px;font-weight:900}
+.profile-tabs-v640 span.active{color:#fff;border-color:#9d1d2c;background:linear-gradient(180deg,#3a141a,#1a1013);box-shadow:inset 0 1px #db5361}
+.profile-tabs-v640 b{display:inline-grid;place-items:center;min-width:20px;height:20px;padding:0 5px;margin-left:5px;border-radius:10px;background:#252c31;color:#ff6575;font-size:10px}
+@media(max-width:1100px){.player-card-v640{grid-template-columns:180px minmax(0,1fr) 115px;min-height:205px;padding:25px 38px 25px 24px}.player-card-rank .rank-avatar.large{width:112px;height:112px}.player-card-showcase{grid-template-rows:repeat(3,46px)}.player-card-showcase img{width:43px;height:43px}.player-card-empty-medal{width:39px;height:39px}.player-card-status>span:not(.player-state){padding:5px 8px}}
+@media(max-width:760px){.player-card-v640{grid-template-columns:110px minmax(0,1fr);min-height:190px;padding:24px 25px;gap:10px}.player-card-frame{object-fit:cover;object-position:left center}.player-card-showcase{display:none}.player-card-rank .rank-avatar.large{width:92px;height:92px}.player-card-copy h2{font-size:28px}.player-card-edit{right:20px;bottom:14px}.profile-tabs-v640{margin:0 8px}}

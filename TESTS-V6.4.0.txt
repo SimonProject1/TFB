@@ -1,0 +1,8 @@
+Prüfungen V6.4.0
+- JavaScript-Syntax
+- Manifest-JSON
+- Player-Card-Asset vorhanden
+- Versionen 6.4.0
+- vorhandene Profilstatistiken und Medaillenlogik erhalten
+- responsive Layoutregeln bei 1100 px und 760 px
+- ZIP-Integrität
