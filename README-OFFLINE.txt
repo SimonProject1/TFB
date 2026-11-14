@@ -1,2 +1,2 @@
-V6.4.2 Rang-Player-Cards
-Alle Hauptdateien und den vollständigen Ordner assets/player-card ersetzen. Danach Browser mit Strg+F5 aktualisieren.
+V6.4.3 Player Card Runtime Fix
+Alle Hauptdateien und assets/player-card ersetzen. Danach Strg+F5 drücken.

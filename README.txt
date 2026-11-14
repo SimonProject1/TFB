@@ -1,14 +1,13 @@
-TFB 2011 Liga V6.4.2 - Rang-Player-Cards
+TFB 2011 Liga V6.4.3 - Player Card Runtime Fix
 
-Neu:
-- neun separate Player-Card-Artworks: Eisen, Stahl, Bronze, Silber, Gold, Platin, Legende, Inaktiv und Leer.
-- automatische Artwork-Auswahl anhand des aktuellen Spielerrangs.
-- Rangabzeichen exakt innerhalb der linken Fassung verkleinert.
-- drei Medaillen exakt in den rechten Fassungen positioniert.
-- Name, Rangfortschritt und Kennzahlen vollständig innerhalb der Kartenmitte.
-- Bearbeiten als kompakter Stift-Button außerhalb der Medaillenslots.
-- Profilregister sind anklickbar und markieren den gewählten Bereich.
-- responsive Anpassung für 1100 px und 760 px.
+Ursache:
+Die rangabhängige Kartenwahl rief rankForPlayer() auf. Diese Funktion existiert nicht. Die vorhandene Rangfunktion heißt playerRank(). Deshalb brach renderProfile() beim Anklicken eines Spielers ab, bevor die Player Card aufgebaut werden konnte.
+
+Behoben:
+- rankForPlayer() durch playerRank() ersetzt.
+- CSS-Klasse des großen Rangabzeichens auf die tatsächlich erzeugte Klasse rank-avatar-large korrigiert.
+- alle neun Rang-Artworks bleiben enthalten.
+- Versions- und Cachekennung auf 6.4.3 erhöht.
 
 Installation:
-Alle Hauptdateien ersetzen und den kompletten Ordner assets/player-card hochladen. Danach Strg+F5.
+Alle Hauptdateien ersetzen und den kompletten Ordner assets/player-card übernehmen. Danach Strg+F5 drücken.

@@ -1,0 +1,8 @@
+Prüfungen V6.4.3
+- JavaScript-Syntax erfolgreich
+- nicht vorhandener Aufruf rankForPlayer entfernt
+- vorhandene Funktion playerRank wird verwendet
+- Rangavatar-CSS stimmt mit rank-avatar-large überein
+- neun Player-Card-Artworks vorhanden
+- Manifest gültig
+- ZIP-Integrität geprüft
