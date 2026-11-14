@@ -1,0 +1,7 @@
+Prüfungen V6.4.4
+- neun PNGs: 1680 x 400 RGBA
+- Alpha-Inhalt vorhanden
+- einheitliche Bühne und relative Overlay-Koordinaten
+- JavaScript-Syntax
+- Manifest gültig
+- ZIP-Integrität

@@ -1,13 +1,14 @@
-TFB 2011 Liga V6.4.3 - Player Card Runtime Fix
+TFB 2011 Liga V6.4.4 - Player Card normalisiert
 
-Ursache:
-Die rangabhängige Kartenwahl rief rankForPlayer() auf. Diese Funktion existiert nicht. Die vorhandene Rangfunktion heißt playerRank(). Deshalb brach renderProfile() beim Anklicken eines Spielers ab, bevor die Player Card aufgebaut werden konnte.
-
-Behoben:
-- rankForPlayer() durch playerRank() ersetzt.
-- CSS-Klasse des großen Rangabzeichens auf die tatsächlich erzeugte Klasse rank-avatar-large korrigiert.
-- alle neun Rang-Artworks bleiben enthalten.
-- Versions- und Cachekennung auf 6.4.3 erhöht.
+Korrekturen:
+- alle neun Player-Card-PNGs auf sichtbaren Inhalt zugeschnitten
+- alle Artworks auf identische 1680 x 400 Pixel normalisiert
+- einheitlicher transparenter Sicherheitsrand
+- Player Card auf maximal 1050 px Breite zentriert
+- Rangabzeichen, Text und Medaillen beziehen sich jetzt auf dieselbe Kartenbühne
+- Medaillen sitzen in den drei rechten Fassungen
+- Bearbeiten-Schaltfläche liegt außerhalb der Slotflächen
+- responsive Regeln für 1100 px und 760 px
 
 Installation:
-Alle Hauptdateien ersetzen und den kompletten Ordner assets/player-card übernehmen. Danach Strg+F5 drücken.
+Alle Hauptdateien und den kompletten Ordner assets/player-card ersetzen. Danach Strg+F5 drücken.
