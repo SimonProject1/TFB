@@ -1,0 +1,8 @@
+Prüfungen V6.5.0
+- JavaScript-Syntax
+- Manifest gültig
+- keine produktive Referenz auf player-card-*.png
+- responsive CSS-Breakpoints: >1500, 1050-1499, 760-1049, <760
+- runde Rang- und Medaillenelemente mit identischer Breite/Höhe
+- lange Namen mit Ellipsis
+- ZIP-Integrität

@@ -1,2 +1,2 @@
-V6.4.4 Player Card normalisiert
-Alle Hauptdateien sowie assets/player-card ersetzen. Danach Strg+F5 drücken.
+V6.5.0 Modulare Player Card
+Hauptdateien ersetzen. Der bisherige assets/player-card-Ordner ist optional. Danach Strg+F5 drücken.
