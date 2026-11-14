@@ -1,0 +1,7 @@
+Prüfungen V6.4.1
+- JavaScript-Syntax erfolgreich
+- medalImagePath vorhanden
+- kein Aufruf der undefinierten Funktion medalAsset mehr
+- Player-Card-Asset vorhanden
+- Manifest gültig
+- ZIP-Integrität geprüft
