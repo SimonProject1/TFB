@@ -1,12 +1,5 @@
-TFB 2011 Liga V6.5.2 - Player-Card-Feinschliff
+TFB 2011 Liga V6.6.0 - Spielerbereich Komplettausbau
 
-Anpassungen:
-- drei Medaillen deutlich größer dargestellt
-- Medaillenfassungen proportional vergrößert
-- graue seitliche Dekoelemente links und rechts am Rangabzeichen entfernt
-- Bearbeiten-Schaltfläche aus der Eckgrafik heraus versetzt
-- responsive Größen für große, mittlere und kleine Ansichten angepasst
-- Eck-Artworks und modulare Karte aus V6.5.1 bleiben erhalten
+Neu: echte Profilregister, Leistungsanalyse, Siegquoten, Medaillenvitrine, Saisonchronik und 22 neue Gunmetal-Artworks.
 
-Installation:
-Alle Hauptdateien ersetzen. Der Ordner assets/player-card-corners bleibt unverändert. Danach Strg+F5 drücken.
+Installation: Hauptdateien ersetzen und assets/player-profile vollständig hochladen. Bestehende Assets bleiben erhalten. Danach Strg+F5.

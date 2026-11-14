@@ -1,2 +1,1 @@
-V6.5.2 Player-Card-Feinschliff
-Hauptdateien ersetzen. assets/player-card-corners bleibt unverändert. Danach Strg+F5 drücken.
+V6.6.0: Hauptdateien und assets/player-profile übernehmen. Danach Strg+F5.
