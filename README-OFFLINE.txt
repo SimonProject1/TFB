@@ -1,12 +1,7 @@
-TFB 2011 Liga – Online/Offline Rank-Asset-Fix
+TFB 2011 Liga V6.3.4 - Online/Offline Update
 
-Ordnerstruktur nicht verändern:
-index.html
-app.js
-styles.css
-assets/ranks/rank-iron.png usw.
-
-Offline: index.html direkt öffnen.
-Online: Inhalt ins GitHub-Hauptverzeichnis hochladen.
-Die Rang-PNGs werden relativ zur app.js geladen und funktionieren mit file:// und https://.
-Falls eine PNG fehlt, erscheint automatisch das metallische CSS-Ersatzdesign statt eines nackten Buchstabens.
+1. Vorhandenen assets-Ordner unverändert lassen.
+2. index.html, app.js, styles.css, manifest.json und README-Dateien ersetzen.
+3. Online: Dateien ins GitHub-Hauptverzeichnis hochladen.
+4. Offline: index.html direkt öffnen.
+5. Bei alter Darstellung Browsercache mit Strg+F5 aktualisieren.

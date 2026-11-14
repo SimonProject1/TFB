@@ -154,3 +154,38 @@ dialog .close{z-index:20;cursor:pointer}
   .leader-card .leader-art{width:78px;min-width:78px;height:78px}
   .leader-card .leader-art img,.leader-card .leader-art-overall img{width:68px;height:68px;max-width:68px;max-height:68px}
 }
+
+
+/* V6.3.4: einheitliche dunkle Scrollbalken und saubere Spieleransicht */
+:root{
+  --scroll-track:#090c0f;
+  --scroll-thumb:#3b4248;
+  --scroll-thumb-hover:#5a6269;
+  --scroll-thumb-active:#a91729;
+}
+html{scrollbar-color:var(--scroll-thumb) var(--scroll-track);scrollbar-width:thin}
+.player-cards,.encounter-scroll,.table-scroll,.archive-modal,.developer-modal,.profile{
+  scrollbar-color:var(--scroll-thumb) var(--scroll-track);
+  scrollbar-width:thin;
+  overscroll-behavior:contain;
+}
+.player-cards::-webkit-scrollbar,.encounter-scroll::-webkit-scrollbar,.table-scroll::-webkit-scrollbar,.archive-modal::-webkit-scrollbar,.developer-modal::-webkit-scrollbar,.profile::-webkit-scrollbar,body::-webkit-scrollbar{width:10px;height:10px}
+.player-cards::-webkit-scrollbar-track,.encounter-scroll::-webkit-scrollbar-track,.table-scroll::-webkit-scrollbar-track,.archive-modal::-webkit-scrollbar-track,.developer-modal::-webkit-scrollbar-track,.profile::-webkit-scrollbar-track,body::-webkit-scrollbar-track{background:var(--scroll-track);border-radius:10px}
+.player-cards::-webkit-scrollbar-thumb,.encounter-scroll::-webkit-scrollbar-thumb,.table-scroll::-webkit-scrollbar-thumb,.archive-modal::-webkit-scrollbar-thumb,.developer-modal::-webkit-scrollbar-thumb,.profile::-webkit-scrollbar-thumb,body::-webkit-scrollbar-thumb{background:linear-gradient(180deg,#4a5158,#292f34);border:2px solid var(--scroll-track);border-radius:10px;min-height:38px}
+.player-cards::-webkit-scrollbar-thumb:hover,.encounter-scroll::-webkit-scrollbar-thumb:hover,.table-scroll::-webkit-scrollbar-thumb:hover,.archive-modal::-webkit-scrollbar-thumb:hover,.developer-modal::-webkit-scrollbar-thumb:hover,.profile::-webkit-scrollbar-thumb:hover,body::-webkit-scrollbar-thumb:hover{background:linear-gradient(180deg,#697178,#3d444a);border-color:#12171b}
+.player-cards::-webkit-scrollbar-thumb:active,.encounter-scroll::-webkit-scrollbar-thumb:active,.table-scroll::-webkit-scrollbar-thumb:active,.archive-modal::-webkit-scrollbar-thumb:active,.developer-modal::-webkit-scrollbar-thumb:active,.profile::-webkit-scrollbar-thumb:active,body::-webkit-scrollbar-thumb:active{background:linear-gradient(180deg,#d52b3e,var(--scroll-thumb-active))}
+.player-cards::-webkit-scrollbar-corner,.encounter-scroll::-webkit-scrollbar-corner,.table-scroll::-webkit-scrollbar-corner,.archive-modal::-webkit-scrollbar-corner,.developer-modal::-webkit-scrollbar-corner,.profile::-webkit-scrollbar-corner{background:var(--scroll-track)}
+
+@media (min-width:761px) and (min-height:720px){
+  body.view-players{height:100dvh;overflow:hidden}
+  body.view-players #app{height:100dvh;overflow:hidden}
+  body.view-players main{height:calc(100dvh - 42px);padding-bottom:16px;overflow:hidden}
+  body.view-players #players.view.active{display:flex;flex-direction:column;height:100%;min-height:0}
+  body.view-players #players>.title{flex:0 0 auto;margin-bottom:14px}
+  body.view-players .player-layout{flex:1;min-height:0;align-items:stretch}
+  body.view-players .player-list-panel{position:static;top:auto;display:flex;flex-direction:column;min-height:0;overflow:hidden}
+  body.view-players .player-list-head{flex:0 0 auto}
+  body.view-players .player-cards{flex:1;min-height:0;max-height:none;overflow-y:auto;overflow-x:hidden;overscroll-behavior-y:contain}
+  body.view-players .profile{height:100%;min-height:0;overflow-y:auto;overscroll-behavior-y:contain}
+  body.view-players .profile-empty{min-height:100%;height:100%}
+}
