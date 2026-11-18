@@ -1,9 +1,0 @@
-V6.6.3 Prüfungen
-- JavaScript-Syntax geprüft
-- rechte Ergebnisreihenfolge 2,1,0
-- automatische Gegenauswahl für 0,1,2 auf beiden Seiten
-- scoreValid bleibt auf 2:0, 2:1, 0:2, 1:2 beschränkt
-- Service-Worker-Syntax geprüft
-- Cache-Version tfb-2011-v6.6.3
-- bestehende Offline-Assetliste erhalten
-- ZIP-Integrität geprüft
