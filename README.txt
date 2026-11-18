@@ -1,17 +1,18 @@
-TFB 2011 Liga V6.6.2 - Offline-Fix
+TFB 2011 Liga V6.6.3 - Ergebniseingabe + Offline
 
 Neu:
-- echter Service Worker mit versionsgebundenem Cache tfb-2011-v6.6.2
-- index.html, app.js, styles.css und manifest.json offline
-- Vereinslogo und Arena offline
-- Navigation, Rang-Artworks, Tabellenführer-Artworks, Medaillen, Player-Card-Ecken und Player-Profile-Artworks werden vorgeladen
-- Navigation fällt ohne Netzwerk auf die vollständige lokal gecachte index.html zurück
-- neue Assets werden beim ersten Online-Abruf zusätzlich in den Cache aufgenommen
-- PWA start_url zeigt explizit auf ./index.html
+- Ergebnisauswahl links: 0 1 2
+- Ergebnisauswahl rechts: 2 1 0
+- Auswahl 0 setzt die Gegenseite automatisch auf 2
+- Auswahl 1 setzt die Gegenseite automatisch auf 2
+- Auswahl 2 setzt die Gegenseite automatisch auf 0
+- Automatik funktioniert von beiden Seiten.
+- Service-Worker-Cache auf tfb-2011-v6.6.3 erhöht.
+- Alle 89 bekannten Offline-App-/Artwork-Einträge aus V6.6.2 bleiben erhalten.
 
-Wichtig für Installation/Test:
-1. sw.js zusammen mit den Hauptdateien ins GitHub-Hauptverzeichnis hochladen.
-2. Alle bestehenden assets-Ordner auf GitHub müssen erhalten bleiben.
-3. Einmal MIT Internet die Seite öffnen und Strg+F5 drücken.
-4. Seite einige Sekunden offen lassen, damit der Service Worker alle vorhandenen Artworks cachen kann.
-5. Danach Browser/App schließen, Netzwerk trennen und über das normale TFB-App-Symbol neu starten.
+Test nach Upload:
+1. Online öffnen und kontrollieren, dass Version 6.6.3 angezeigt wird.
+2. Strg+F5 und ca. 10 Sekunden geöffnet lassen.
+3. Ergebniseingabe testen.
+4. App schließen und Internet trennen.
+5. Normal über das TFB-App-Symbol starten und erneut Ergebniseingabe sowie Artworks prüfen.
