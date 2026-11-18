@@ -1,9 +1,18 @@
 {
-  "name": "TFB 2011 Liga V6.6.0",
+  "name": "TFB 2011 Liga V6.6.2",
   "short_name": "TFB Liga",
-  "start_url": "./",
+  "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#080a0c",
   "theme_color": "#d21f32",
-  "icons": []
+  "icons": [
+    {
+      "src": "assets/vereinslogo.png",
+      "sizes": "any",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "scope": "./",
+  "id": "./index.html"
 }

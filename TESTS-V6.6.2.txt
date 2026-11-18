@@ -1,0 +1,8 @@
+TFB V6.6.2 statische Offline-Prüfung
+- Service Worker erzeugt
+- Cache-Version: tfb-2011-v6.6.2
+- App-Shell-Einträge: 89
+- Offline-Navigation fällt auf index.html zurück
+- dynamische Cache-Erweiterung für weitere lokale GET-Assets aktiv
+- Asset-Cache enthält Navigation, Ränge, Tabellen-Artworks, Medaillen, Player-Card-Corners und Player-Profile-Artworks
+- tolerant gegenüber einzelnen auf GitHub fehlenden Assets: fehlendes Artwork verhindert Service-Worker-Installation nicht
